@@ -1,0 +1,117 @@
+{
+    "meta": {
+        "title": "Test gratuito de tipo de dopamina - \u00bfCu\u00e1l es el estilo de recompensa de tu cerebro?",
+        "description": "Haz el test gratuito de tipo de dopamina. 8 preguntas revelan el estilo de recompensa de tu cerebro.",
+        "participants": "14.200+",
+        "participantsLabel": "participantes",
+        "timeEstimate": "~2 min \u2022 8 preguntas"
+    },
+    "loader": { "loading": "Cargando..." },
+    "a11y": { "skipToContent": "Ir al contenido" },
+    "app": {
+        "title": "\u00bfCu\u00e1l es tu tipo de dopamina?",
+        "subtitle": "Descubre c\u00f3mo el sistema de recompensa de tu cerebro moldea tu personalidad",
+        "startBtn": "Descubre tu tipo de dopamina",
+        "startDesc": "8 escenarios cotidianos revelan qu\u00e9 neuroqu\u00edmico impulsa tus decisiones y felicidad."
+    },
+    "quiz": {
+        "questionCounter": "Pregunta {{current}} de {{total}}",
+        "midEncouragement": "\u00a1Ya vas por la mitad! Tu perfil cerebral se est\u00e1 formando..."
+    },
+    "analyzing": {
+        "step1": "Mapeando v\u00edas neuronales...",
+        "step2": "Analizando patrones de recompensa...",
+        "step3": "Identificando tu tipo de dopamina..."
+    },
+    "q": {
+        "0": "Es s\u00e1bado por la ma\u00f1ana sin planes. \u00bfQu\u00e9 te atrae m\u00e1s?",
+        "1": "Acabas de recibir un gran bono en el trabajo. \u00bfTu primer instinto?",
+        "2": "Est\u00e1s en una fiesta donde no conoces a casi nadie. T\u00fa...",
+        "3": "Un amigo sugiere probar un nuevo deporte extremo. \u00bfTu reacci\u00f3n?",
+        "4": "Tienes una noche libre. \u00bfCu\u00e1l es tu forma ideal de recargar energ\u00edas?",
+        "5": "Un compa\u00f1ero presenta un problema en el trabajo. T\u00fa inmediatamente...",
+        "6": "Est\u00e1s planeando unas vacaciones. \u00bfQu\u00e9 es lo m\u00e1s importante?",
+        "7": "Acabas de terminar un proyecto dif\u00edcil. \u00bfQu\u00e9 quieres hacer despu\u00e9s?"
+    },
+    "opt": {
+        "0a": "Probar el nuevo lugar de paraca\u00eddas cercano",
+        "0b": "Pasar horas sumergido en un proyecto de hobby",
+        "0c": "Organizar un brunch con amigos",
+        "0d": "Dormir hasta tarde y tener una ma\u00f1ana acogedora en casa",
+        "1a": "Reservar una experiencia llena de adrenalina",
+        "1b": "Invertir en un curso para dominar una nueva habilidad",
+        "1c": "Organizar una cena de celebraci\u00f3n con amigos",
+        "1d": "Ahorrarlo y disfrutar de la seguridad",
+        "2a": "Lanzarte a conversar y conocer a todos",
+        "2b": "Encontrar a una persona interesante para una charla profunda",
+        "2c": "Convertirte en el pegamento social que conecta grupos",
+        "2d": "Buscar un rinc\u00f3n tranquilo y observar",
+        "3a": "\u00a1Vamos ahora mismo! \u00a1Me apunto!",
+        "3b": "Primero investigar\u00e9 todo al respecto",
+        "3c": "Solo si viene un grupo de amigos",
+        "3d": "Preferir\u00eda mirar desde una distancia segura",
+        "4a": "Algo espont\u00e1neo y emocionante",
+        "4b": "Perderte en un proyecto creativo o intelectual",
+        "4c": "Videollamada o quedar con amigos cercanos",
+        "4d": "Rutina c\u00f3moda: serie favorita, snacks, mantas",
+        "5a": "Te emocionas \u2014 es una oportunidad para demostrar tu val\u00eda",
+        "5b": "Empezar a analizarlo profundamente desde todos los \u00e1ngulos",
+        "5c": "Sugerir una lluvia de ideas en equipo",
+        "5d": "Pensar en c\u00f3mo resolverlo met\u00f3dica y calmadamente",
+        "6a": "Aventura y emociones \u00fanicas",
+        "6b": "Inmersi\u00f3n cultural y aprendizaje",
+        "6c": "Ir con amigos y crear recuerdos",
+        "6d": "Un retiro relajante y c\u00f3modo",
+        "7a": "Lanzarte a algo a\u00fan m\u00e1s dif\u00edcil",
+        "7b": "Reflexionar profundamente sobre lo que aprend\u00ed",
+        "7c": "Celebrar con el equipo",
+        "7d": "Tomar un merecido descanso"
+    },
+    "type": {
+        "thrillSeeker": {
+            "name": "Buscador de emociones",
+            "desc": "Tu cerebro anhela la estimulaci\u00f3n intensa y la adrenalina. Prosperas con el riesgo, la novedad a alta velocidad y la emoci\u00f3n de superar l\u00edmites. La rutina es tu kryptonita \u2014 necesitas emoci\u00f3n para sentirte vivo. Tu dopamina se dispara al m\u00e1ximo en momentos impredecibles y trepidantes."
+        },
+        "deepDiver": {
+            "name": "Explorador profundo",
+            "desc": "Tu cerebro recompensa la concentraci\u00f3n profunda y la maestr\u00eda. Entras en estado de flujo f\u00e1cilmente y encuentras satisfacci\u00f3n en comprender las cosas a fondo. Prefieres pasar 5 horas perfeccionando una cosa que probar 10. Tu sistema de dopamina est\u00e1 sintonizado para la experiencia y la profundidad."
+        },
+        "socialSpark": {
+            "name": "Chispa social",
+            "desc": "Tu cerebro se ilumina a trav\u00e9s de la conexi\u00f3n humana. Las conversaciones, la risa compartida y la energ\u00eda grupal son tus principales fuentes de recompensa. Eres el pegamento que mantiene unidos a los grupos sociales, y tu dopamina alcanza su pico durante interacciones sociales significativas."
+        },
+        "comfortCreator": {
+            "name": "Creador de confort",
+            "desc": "Tu cerebro encuentra recompensa en la estabilidad, la calidez y los placeres predecibles. Eres el maestro de lo acogedor \u2014 creas entornos que se sienten seguros y reconfortantes. Tu sistema de dopamina valora la calma rica en serotonina por encima del caos alimentado por adrenalina."
+        },
+        "challengeChaser": {
+            "name": "Perseguidor de desaf\u00edos",
+            "desc": "Tu cerebro est\u00e1 dise\u00f1ado para el logro y la competencia. Fijar metas, batir r\u00e9cords y demostrarte a ti mismo impulsan tu sistema de recompensa. Necesitas progreso medible para sentirte satisfecho. Tu dopamina se dispara con m\u00e1s fuerza cuando conquistas algo dif\u00edcil."
+        },
+        "noveltyHunter": {
+            "name": "Cazador de novedades",
+            "desc": "Tu cerebro anhela lo nuevo y lo inexplorado. Te atraen los lugares, ideas y experiencias a\u00fan por descubrir. En el momento en que algo se vuelve familiar, ya est\u00e1s buscando el pr\u00f3ximo descubrimiento. Tu sistema de dopamina est\u00e1 optimizado para las experiencias de primera vez."
+        }
+    },
+    "metrics": {
+        "dopamine": "Dopamina",
+        "serotonin": "Serotonina",
+        "adrenaline": "Adrenalina",
+        "oxytocin": "Oxitocina",
+        "endorphin": "Endorfina"
+    },
+    "result": {
+        "yourType": "Tu tipo de dopamina",
+        "brainChemistry": "Tu qu\u00edmica cerebral",
+        "share": "Compartir tu resultado",
+        "restart": "Hacerlo de nuevo",
+        "shareText": "\u00a1Soy {{type}}! \u00bfCu\u00e1l es tu tipo de dopamina?"
+    },
+    "share": {
+        "kakao": "KakaoTalk",
+        "twitter": "Twitter",
+        "facebook": "Facebook",
+        "copy": "Copiar enlace",
+        "copied": "\u00a1Copiado!"
+    }
+}

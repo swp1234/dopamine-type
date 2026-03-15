@@ -1,0 +1,117 @@
+{
+    "meta": {
+        "title": "Test gratuit de type de dopamine \u2013 Quel est le style de r\u00e9compense de votre cerveau ?",
+        "description": "Passez le test gratuit de type de dopamine. 8 questions r\u00e9v\u00e8lent le style de r\u00e9compense de votre cerveau.",
+        "participants": "14 200+",
+        "participantsLabel": "participants",
+        "timeEstimate": "~2 min \u2022 8 questions"
+    },
+    "loader": { "loading": "Chargement..." },
+    "a11y": { "skipToContent": "Aller au contenu" },
+    "app": {
+        "title": "Quel est votre type de dopamine ?",
+        "subtitle": "D\u00e9couvrez comment le syst\u00e8me de r\u00e9compense de votre cerveau fa\u00e7onne votre personnalit\u00e9",
+        "startBtn": "D\u00e9couvrez votre type de dopamine",
+        "startDesc": "8 sc\u00e9narios du quotidien r\u00e9v\u00e8lent quel neurochimique guide vos d\u00e9cisions et votre bonheur."
+    },
+    "quiz": {
+        "questionCounter": "Question {{current}} sur {{total}}",
+        "midEncouragement": "\u00c0 mi-chemin ! Votre profil c\u00e9r\u00e9bral prend forme..."
+    },
+    "analyzing": {
+        "step1": "Cartographie des voies neuronales...",
+        "step2": "Analyse des sch\u00e9mas de r\u00e9compense...",
+        "step3": "Identification de votre type de dopamine..."
+    },
+    "q": {
+        "0": "Samedi matin sans aucun plan. Qu'est-ce qui vous tente le plus ?",
+        "1": "Vous venez de recevoir une grosse prime au travail. Votre premier r\u00e9flexe ?",
+        "2": "Vous \u00eates \u00e0 une f\u00eate o\u00f9 vous ne connaissez presque personne. Vous...",
+        "3": "Un ami propose d'essayer un nouveau sport extr\u00eame. Votre r\u00e9action ?",
+        "4": "Vous avez une soir\u00e9e libre. Votre fa\u00e7on id\u00e9ale de recharger vos batteries ?",
+        "5": "Un coll\u00e8gue pr\u00e9sente un probl\u00e8me au travail. Vous imm\u00e9diatement...",
+        "6": "Vous planifiez des vacances. Qu'est-ce qui compte le plus ?",
+        "7": "Vous venez de terminer un projet difficile. Que voulez-vous ensuite ?"
+    },
+    "opt": {
+        "0a": "Essayer le nouveau centre de parachutisme",
+        "0b": "Passer des heures plong\u00e9 dans un projet de loisir",
+        "0c": "Organiser un brunch entre amis",
+        "0d": "Faire la grasse matin\u00e9e et profiter d'un matin douillet \u00e0 la maison",
+        "1a": "R\u00e9server une exp\u00e9rience riche en adr\u00e9naline",
+        "1b": "Investir dans un cours pour ma\u00eetriser une nouvelle comp\u00e9tence",
+        "1c": "Organiser un d\u00eener de f\u00eate avec des amis",
+        "1d": "\u00c9pargner et profiter de la s\u00e9curit\u00e9",
+        "2a": "Se lancer dans les conversations et rencontrer tout le monde",
+        "2b": "Trouver une personne int\u00e9ressante pour une discussion profonde",
+        "2c": "Devenir le liant social qui connecte les groupes",
+        "2d": "Trouver un coin tranquille et observer",
+        "3a": "On y va tout de suite ! Je suis \u00e0 fond !",
+        "3b": "Je vais d'abord tout rechercher en d\u00e9tail",
+        "3c": "Seulement si un groupe d'amis vient aussi",
+        "3d": "Je pr\u00e9f\u00e8re regarder \u00e0 distance",
+        "4a": "Quelque chose de spontan\u00e9 et excitant",
+        "4b": "Se perdre dans un projet cr\u00e9atif ou intellectuel",
+        "4c": "Appel vid\u00e9o ou retrouvailles avec des amis proches",
+        "4d": "Routine confortable : s\u00e9rie pr\u00e9f\u00e9r\u00e9e, snacks, plaids",
+        "5a": "\u00cates enthousiaste \u2014 c'est l'occasion de faire ses preuves",
+        "5b": "Commencez \u00e0 analyser en profondeur sous tous les angles",
+        "5c": "Proposez un brainstorming en \u00e9quipe",
+        "5d": "R\u00e9fl\u00e9chissez \u00e0 comment r\u00e9soudre m\u00e9thodiquement et calmement",
+        "6a": "L'aventure et des sensations uniques",
+        "6b": "L'immersion culturelle et l'apprentissage",
+        "6c": "Partir avec des amis et cr\u00e9er des souvenirs",
+        "6d": "Une retraite relaxante et confortable",
+        "7a": "Se lancer dans quelque chose d'encore plus difficile",
+        "7b": "R\u00e9fl\u00e9chir profond\u00e9ment \u00e0 ce que j'ai appris",
+        "7c": "F\u00eater avec l'\u00e9quipe",
+        "7d": "Prendre un repos bien m\u00e9rit\u00e9"
+    },
+    "type": {
+        "thrillSeeker": {
+            "name": "Chercheur de sensations",
+            "desc": "Votre cerveau a soif de stimulation intense et d'adr\u00e9naline. Vous vous \u00e9panouissez dans le risque, la nouveaut\u00e9 \u00e0 grande vitesse et l'ivresse de repousser les limites. La routine est votre kryptonite \u2014 vous avez besoin d'excitation pour vous sentir vivant. Votre dopamine atteint son pic lors de moments impr\u00e9visibles et palpitants."
+        },
+        "deepDiver": {
+            "name": "Plongeur des profondeurs",
+            "desc": "Votre cerveau r\u00e9compense la concentration profonde et la ma\u00eetrise. Vous entrez facilement en \u00e9tat de flow et trouvez satisfaction \u00e0 comprendre les choses en profondeur. Vous pr\u00e9f\u00e9rez passer 5 heures \u00e0 perfectionner une chose plut\u00f4t qu'en essayer 10. Votre syst\u00e8me dopaminergique est r\u00e9gl\u00e9 sur l'expertise et la profondeur."
+        },
+        "socialSpark": {
+            "name": "\u00c9tincelle sociale",
+            "desc": "Votre cerveau s'illumine \u00e0 travers les connexions humaines. Les conversations, les rires partag\u00e9s et l'\u00e9nergie de groupe sont vos principales sources de r\u00e9compense. Vous \u00eates le ciment qui unit les groupes sociaux, et votre dopamine culmine lors d'interactions sociales significatives."
+        },
+        "comfortCreator": {
+            "name": "Cr\u00e9ateur de confort",
+            "desc": "Votre cerveau trouve sa r\u00e9compense dans la stabilit\u00e9, la chaleur et les plaisirs pr\u00e9visibles. Vous \u00eates le ma\u00eetre du cocooning \u2014 cr\u00e9ant des environnements qui procurent s\u00e9curit\u00e9 et r\u00e9confort. Votre syst\u00e8me dopaminergique privil\u00e9gie le calme riche en s\u00e9rotonine au chaos nourri d'adr\u00e9naline."
+        },
+        "challengeChaser": {
+            "name": "Poursuiveur de d\u00e9fis",
+            "desc": "Votre cerveau est c\u00e2bl\u00e9 pour l'accomplissement et la comp\u00e9tition. Fixer des objectifs, battre des records et faire ses preuves alimentent votre syst\u00e8me de r\u00e9compense. Vous avez besoin de progr\u00e8s mesurables pour \u00eatre satisfait. Votre dopamine monte en fl\u00e8che quand vous conquérez quelque chose de difficile."
+        },
+        "noveltyHunter": {
+            "name": "Chasseur de nouveaut\u00e9",
+            "desc": "Votre cerveau a soif de nouveau et d'inexplor\u00e9. Vous \u00eates attir\u00e9 par les lieux, id\u00e9es et exp\u00e9riences encore inconnus. D\u00e8s que quelque chose devient familier, vous cherchez d\u00e9j\u00e0 la prochaine d\u00e9couverte. Votre syst\u00e8me dopaminergique est optimis\u00e9 pour les premi\u00e8res exp\u00e9riences."
+        }
+    },
+    "metrics": {
+        "dopamine": "Dopamine",
+        "serotonin": "S\u00e9rotonine",
+        "adrenaline": "Adr\u00e9naline",
+        "oxytocin": "Ocytocine",
+        "endorphin": "Endorphine"
+    },
+    "result": {
+        "yourType": "Votre type de dopamine",
+        "brainChemistry": "Votre chimie c\u00e9r\u00e9brale",
+        "share": "Partager votre r\u00e9sultat",
+        "restart": "Refaire le test",
+        "shareText": "Je suis {{type}} ! Quel est ton type de dopamine ?"
+    },
+    "share": {
+        "kakao": "KakaoTalk",
+        "twitter": "Twitter",
+        "facebook": "Facebook",
+        "copy": "Copier le lien",
+        "copied": "Copi\u00e9 !"
+    }
+}

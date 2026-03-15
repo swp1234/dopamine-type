@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "page_title": "Dopamine Type Test - What's Your Brain's Reward Style? | DopaBrain",
+    "description": "Take the free dopamine type test to discover your brain's reward system. 8 questions reveal if you're a Thrill Seeker, Deep Diver, or Social Spark. Instant results!",
+    "keywords": "dopamine test, dopamine quiz, dopamine type, brain reward system, neuroscience personality test",
+    "og_title": "Dopamine Type Test - What's Your Brain's Reward Style?",
+    "og_description": "Take the free dopamine type test to discover your brain's reward system. 8 questions reveal your dopamine personality!",
+    "twitter_title": "Dopamine Type Test - What's Your Brain's Reward Style?",
+    "twitter_description": "8 questions reveal your dopamine personality type. Are you a Thrill Seeker or Deep Diver?"
+  },
+  "app": { "skipLink": "Skip to main" },
+  "loader": { "loading": "Loading..." },
+  "start": {
+    "social_proof": "participants",
+    "title": "What's Your Dopamine Type?",
+    "subtitle": "Discover how your brain's reward system shapes your personality",
+    "questions_count": "8 questions"
+  },
+  "button": {
+    "start": "Discover Your Dopamine Type",
+    "restart": "Try Again",
+    "share_kakao": "KakaoTalk",
+    "share_twitter": "Twitter",
+    "share_facebook": "Facebook",
+    "share_copy": "Copy Link"
+  },
+  "analyzing": {
+    "title": "Analyzing your dopamine profile...",
+    "step1": "Scanning reward patterns...",
+    "step2": "Mapping neural pathways...",
+    "step3": "Identifying dopamine type..."
+  },
+  "result": {
+    "your_type": "Your Dopamine Type",
+    "metrics_title": "Neurotransmitter Profile",
+    "share": "Share Your Result"
+  },
+  "metric": {
+    "dopamine": "Dopamine",
+    "serotonin": "Serotonin",
+    "adrenaline": "Adrenaline",
+    "oxytocin": "Oxytocin",
+    "endorphin": "Endorphin"
+  },
+  "game": { "back": "DopaBrain Home" },
+  "share": { "text": "My dopamine type is {type}! What's yours?" },
+  "q": {
+    "0": "What energizes you most on a weekend?",
+    "0a": "Extreme sports or adrenaline activities",
+    "0b": "A deep focus project or learning session",
+    "0c": "A big social gathering with friends",
+    "0d": "A cozy routine at home",
+    "1": "How do you approach a new challenge?",
+    "1a": "Set competitive goals and push hard",
+    "1b": "Explore all angles before diving in",
+    "1c": "Jump in head-first, figure it out later",
+    "1d": "Plan carefully and stick to what's safe",
+    "2": "What kind of content hooks you?",
+    "2a": "Viral social media trends",
+    "2b": "Deep documentaries or long reads",
+    "2c": "Competitive sports or esports",
+    "2d": "Calming ASMR or lo-fi beats",
+    "3": "Your ideal vacation?",
+    "3a": "Skydiving, bungee jumping, extreme adventure",
+    "3b": "Party city with a big group of friends",
+    "3c": "Peaceful cabin retreat in nature",
+    "3d": "Unplanned backpacking to unknown places",
+    "4": "What motivates you at work or school?",
+    "4a": "Beating targets and climbing rankings",
+    "4b": "Mastering a skill to perfection",
+    "4c": "Team energy, praise, and collaboration",
+    "4d": "A stable routine and comfortable environment",
+    "5": "How do you handle stress?",
+    "5a": "Intense workout or physical activity",
+    "5b": "Talk it out with friends or family",
+    "5c": "Meditate, journal, or reflect alone",
+    "5d": "Try something completely new and different",
+    "6": "Pick a superpower:",
+    "6a": "Super speed — feel the rush",
+    "6b": "Time freeze — ultimate deep focus",
+    "6c": "Telepathy — connect with everyone",
+    "6d": "Teleportation — explore everywhere instantly",
+    "7": "What makes you happiest?",
+    "7a": "Winning a competition or achieving a goal",
+    "7b": "A perfect cozy evening with comfort food",
+    "7c": "Making everyone laugh at a gathering",
+    "7d": "Discovering something no one else knows"
+  },
+  "type": {
+    "thrillSeeker": {
+      "name": "Thrill Seeker",
+      "desc": "Your brain craves intensity and adrenaline. You're drawn to extreme experiences, high-stakes situations, and the rush of pushing boundaries. Your dopamine spikes hardest when you're living on the edge."
+    },
+    "deepDiver": {
+      "name": "Deep Diver",
+      "desc": "Your brain rewards deep focus and mastery. You get your biggest dopamine hits from losing yourself in complex problems, learning new skills, and achieving expertise. Quality over quantity, always."
+    },
+    "socialSpark": {
+      "name": "Social Spark",
+      "desc": "Your brain lights up through human connection. Social interactions, making others laugh, and being part of a vibrant group are your dopamine fuel. You're energized by the energy of others."
+    },
+    "comfortCreator": {
+      "name": "Comfort Creator",
+      "desc": "Your brain finds reward in stability and routine. You get steady dopamine from cozy environments, familiar rituals, and creating a safe, comfortable world. Your calm is your superpower."
+    },
+    "challengeChaser": {
+      "name": "Challenge Chaser",
+      "desc": "Your brain is wired for competition and achievement. Rankings, targets, and beating personal bests flood your dopamine system. You turn everything into a challenge — and you love winning."
+    },
+    "noveltyHunter": {
+      "name": "Novelty Hunter",
+      "desc": "Your brain is addicted to the new and unknown. Exploring uncharted territory, discovering hidden gems, and trying things nobody else has tried give you the ultimate dopamine rush."
+    }
+  }
+}

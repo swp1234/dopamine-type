@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a1a"/>
+      <stop offset="100%" stop-color="#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      @keyframes pulse { 0%,100% { opacity: 0.5; } 50% { opacity: 1; } }
+      .neuron { animation: pulse 2.5s ease-in-out infinite; }
+      .neuron-d1 { animation-delay: 0s; }
+      .neuron-d2 { animation-delay: 0.5s; }
+      .neuron-d3 { animation-delay: 1.0s; }
+      .neuron-d4 { animation-delay: 1.5s; }
+      .neuron-d5 { animation-delay: 0.8s; }
+    </style>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="80" fill="url(#bg)"/>
+  <!-- Subtle glow behind brain -->
+  <ellipse cx="256" cy="210" rx="130" ry="120" fill="url(#glow)"/>
+  <!-- Brain outline -->
+  <g transform="translate(256,210)" fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Left hemisphere -->
+    <path d="M-8,-100 C-50,-105 -110,-80 -116,-26 C-120,10 -100,32 -90,42 C-100,52 -110,74 -94,94 C-78,114 -48,116 -26,106 C-16,116 -10,122 -4,122"/>
+    <!-- Right hemisphere -->
+    <path d="M8,-100 C50,-105 110,-80 116,-26 C120,10 100,32 90,42 C100,52 110,74 94,94 C78,114 48,116 26,106 C16,116 10,122 4,122"/>
+    <!-- Center fold -->
+    <path d="M0,-100 L0,122" stroke-opacity="0.6"/>
+    <!-- Additional folds left -->
+    <path d="M-44,-70 C-60,-50 -70,-20 -60,10" stroke-opacity="0.3" stroke-width="3"/>
+    <path d="M-30,30 C-50,50 -60,70 -50,90" stroke-opacity="0.3" stroke-width="3"/>
+    <!-- Additional folds right -->
+    <path d="M44,-70 C60,-50 70,-20 60,10" stroke-opacity="0.3" stroke-width="3"/>
+    <path d="M30,30 C50,50 60,70 50,90" stroke-opacity="0.3" stroke-width="3"/>
+    <!-- Neural nodes with pulse animation -->
+    <g stroke="none">
+      <circle class="neuron neuron-d1" cx="-58" cy="-36" r="10" fill="#f59e0b"/>
+      <circle class="neuron neuron-d2" cx="52" cy="-20" r="9" fill="#f59e0b"/>
+      <circle class="neuron neuron-d3" cx="-36" cy="48" r="8" fill="#fbbf24"/>
+      <circle class="neuron neuron-d4" cx="42" cy="62" r="9" fill="#fbbf24"/>
+      <circle class="neuron neuron-d5" cx="0" cy="-6" r="12" fill="#f59e0b"/>
+    </g>
+    <!-- Synapse connections -->
+    <g stroke="#f59e0b" stroke-width="2" stroke-opacity="0.4" stroke-dasharray="4 4">
+      <line x1="-58" y1="-36" x2="0" y2="-6"/>
+      <line x1="52" y1="-20" x2="0" y2="-6"/>
+      <line x1="0" y1="-6" x2="-36" y2="48"/>
+      <line x1="0" y1="-6" x2="42" y2="62"/>
+      <line x1="-58" y1="-36" x2="-36" y2="48"/>
+      <line x1="52" y1="-20" x2="42" y2="62"/>
+    </g>
+    <!-- Small secondary neurons -->
+    <g stroke="none" opacity="0.4">
+      <circle cx="-80" cy="10" r="4" fill="#fbbf24"/>
+      <circle cx="78" cy="16" r="4" fill="#fbbf24"/>
+      <circle cx="-20" cy="-60" r="4" fill="#f59e0b"/>
+      <circle cx="24" cy="-56" r="4" fill="#f59e0b"/>
+      <circle cx="-10" cy="80" r="4" fill="#fbbf24"/>
+      <circle cx="14" cy="76" r="4" fill="#fbbf24"/>
+    </g>
+  </g>
+  <!-- Text -->
+  <text x="256" y="410" text-anchor="middle" font-family="system-ui,sans-serif" font-size="38" font-weight="700" fill="#f59e0b" letter-spacing="8">DOPAMINE</text>
+  <text x="256" y="445" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" font-weight="400" fill="#f59e0b" opacity="0.6" letter-spacing="2">TYPE TEST</text>
+</svg>

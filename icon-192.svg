@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a1a"/>
+      <stop offset="100%" stop-color="#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="192" height="192" rx="32" fill="url(#bg)"/>
+  <!-- Brain outline -->
+  <g transform="translate(96,82)" fill="none" stroke="url(#gold)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Left hemisphere -->
+    <path d="M-4,-38 C-20,-40 -42,-30 -44,-10 C-46,4 -38,12 -34,16 C-38,20 -42,28 -36,36 C-30,44 -18,44 -10,40 C-6,44 -4,46 -2,46"/>
+    <!-- Right hemisphere -->
+    <path d="M4,-38 C20,-40 42,-30 44,-10 C46,4 38,12 34,16 C38,20 42,28 36,36 C30,44 18,44 10,40 C6,44 4,46 2,46"/>
+    <!-- Center fold -->
+    <path d="M0,-38 L0,46"/>
+    <!-- Neural pathways -->
+    <g stroke-width="2" opacity="0.8">
+      <circle cx="-22" cy="-14" r="4" fill="#f59e0b" fill-opacity="0.6" stroke="none"/>
+      <circle cx="20" cy="-8" r="3.5" fill="#f59e0b" fill-opacity="0.5" stroke="none"/>
+      <circle cx="-14" cy="18" r="3" fill="#fbbf24" fill-opacity="0.5" stroke="none"/>
+      <circle cx="16" cy="24" r="3.5" fill="#fbbf24" fill-opacity="0.6" stroke="none"/>
+      <circle cx="0" cy="-2" r="4.5" fill="#f59e0b" fill-opacity="0.7" stroke="none"/>
+      <!-- Synapse connections -->
+      <line x1="-22" y1="-14" x2="0" y2="-2" stroke="#f59e0b" stroke-opacity="0.5"/>
+      <line x1="20" y1="-8" x2="0" y2="-2" stroke="#f59e0b" stroke-opacity="0.5"/>
+      <line x1="0" y1="-2" x2="-14" y2="18" stroke="#fbbf24" stroke-opacity="0.4"/>
+      <line x1="0" y1="-2" x2="16" y2="24" stroke="#fbbf24" stroke-opacity="0.4"/>
+    </g>
+  </g>
+  <!-- Text -->
+  <text x="96" y="156" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#f59e0b" letter-spacing="3">DOPAMINE</text>
+</svg>
