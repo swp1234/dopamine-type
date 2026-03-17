@@ -1,117 +1,115 @@
 {
-    "meta": {
-        "title": "Tes Tipe Dopamin Gratis - Apa Gaya Reward Otakmu?",
-        "description": "Ikuti tes tipe dopamin gratis. 8 pertanyaan mengungkap gaya reward otakmu.",
-        "participants": "14.200+",
-        "participantsLabel": "peserta",
-        "timeEstimate": "~2 menit \u2022 8 pertanyaan"
+  "meta": {
+    "page_title": "Tes Tipe Dopamin - Apa Gaya Reward Otakmu? | DopaBrain",
+    "description": "Ikuti tes tipe dopamin gratis untuk menemukan sistem reward otakmu. 8 pertanyaan mengungkap apakah kamu Thrill Seeker, Deep Diver, atau Social Spark. Hasil instan!",
+    "keywords": "tes dopamin, kuis dopamin, tipe dopamin, sistem reward otak, tes kepribadian neurosains",
+    "og_title": "Tes Tipe Dopamin - Apa Gaya Reward Otakmu?",
+    "og_description": "Ikuti tes tipe dopamin gratis untuk menemukan sistem reward otakmu. 8 pertanyaan mengungkap kepribadian dopaminmu!",
+    "twitter_title": "Tes Tipe Dopamin - Apa Gaya Reward Otakmu?",
+    "twitter_description": "8 pertanyaan mengungkap tipe kepribadian dopaminmu. Apakah kamu Thrill Seeker atau Deep Diver?"
+  },
+  "app": { "skipLink": "Langsung ke konten utama" },
+  "loader": { "loading": "Memuat..." },
+  "start": {
+    "social_proof": "peserta",
+    "title": "Apa Tipe Dopaminmu?",
+    "subtitle": "Temukan bagaimana sistem reward otakmu membentuk kepribadianmu",
+    "questions_count": "8 pertanyaan"
+  },
+  "button": {
+    "start": "Temukan Tipe Dopaminmu",
+    "restart": "Coba Lagi",
+    "share_kakao": "KakaoTalk",
+    "share_twitter": "Twitter",
+    "share_facebook": "Facebook",
+    "share_copy": "Salin Link"
+  },
+  "analyzing": {
+    "title": "Menganalisis profil dopaminmu...",
+    "step1": "Memindai pola reward...",
+    "step2": "Memetakan jalur saraf...",
+    "step3": "Mengidentifikasi tipe dopamin..."
+  },
+  "result": {
+    "your_type": "Tipe Dopaminmu",
+    "metrics_title": "Profil Neurotransmitter",
+    "share": "Bagikan Hasilmu"
+  },
+  "metric": {
+    "dopamine": "Dopamin",
+    "serotonin": "Serotonin",
+    "adrenaline": "Adrenalin",
+    "oxytocin": "Oksitosin",
+    "endorphin": "Endorfin"
+  },
+  "game": { "back": "Beranda DopaBrain" },
+  "share": { "text": "Tipe dopaminku adalah {type}! Kalau kamu?" },
+  "q": {
+    "0": "Apa yang paling membuatmu berenergi di akhir pekan?",
+    "0a": "Olahraga ekstrem atau aktivitas penuh adrenalin",
+    "0b": "Proyek fokus mendalam atau sesi belajar",
+    "0c": "Pesta besar dengan teman-teman",
+    "0d": "Rutinitas nyaman di rumah",
+    "1": "Bagaimana kamu menghadapi tantangan baru?",
+    "1a": "Menetapkan target kompetitif dan berusaha keras",
+    "1b": "Menjelajahi semua sudut sebelum terjun",
+    "1c": "Langsung terjun, cari tahu nanti",
+    "1d": "Merencanakan dengan hati-hati dan pilih yang aman",
+    "2": "Konten seperti apa yang menarik perhatianmu?",
+    "2a": "Tren viral di media sosial",
+    "2b": "Dokumenter mendalam atau bacaan panjang",
+    "2c": "Olahraga kompetitif atau esports",
+    "2d": "ASMR menenangkan atau lo-fi beats",
+    "3": "Liburan idealmu?",
+    "3a": "Skydiving, bungee jumping, petualangan ekstrem",
+    "3b": "Kota pesta dengan sekelompok besar teman",
+    "3c": "Kabin damai di tengah alam",
+    "3d": "Backpacking tanpa rencana ke tempat yang tidak dikenal",
+    "4": "Apa yang memotivasimu di tempat kerja atau sekolah?",
+    "4a": "Mengalahkan target dan naik peringkat",
+    "4b": "Menguasai keterampilan hingga sempurna",
+    "4c": "Energi tim, pujian, dan kolaborasi",
+    "4d": "Rutinitas stabil dan lingkungan nyaman",
+    "5": "Bagaimana kamu mengatasi stres?",
+    "5a": "Olahraga intens atau aktivitas fisik",
+    "5b": "Berbicara dengan teman atau keluarga",
+    "5c": "Meditasi, menulis jurnal, atau refleksi sendiri",
+    "5d": "Mencoba sesuatu yang benar-benar baru dan berbeda",
+    "6": "Pilih kekuatan super:",
+    "6a": "Kecepatan super — rasakan sensasinya",
+    "6b": "Bekukan waktu — fokus mendalam ultimate",
+    "6c": "Telepati — terhubung dengan semua orang",
+    "6d": "Teleportasi — jelajahi semua tempat secara instan",
+    "7": "Apa yang membuatmu paling bahagia?",
+    "7a": "Memenangkan kompetisi atau mencapai tujuan",
+    "7b": "Malam yang sempurna dengan makanan favorit",
+    "7c": "Membuat semua orang tertawa di suatu acara",
+    "7d": "Menemukan sesuatu yang tidak diketahui orang lain"
+  },
+  "type": {
+    "thrillSeeker": {
+      "name": "Thrill Seeker",
+      "desc": "Otakmu mendambakan intensitas dan adrenalin. Kamu tertarik pada pengalaman ekstrem, situasi berisiko tinggi, dan sensasi melampaui batas. Dopaminmu melonjak paling tinggi saat kamu hidup di ujung tanduk."
     },
-    "loader": { "loading": "Memuat..." },
-    "a11y": { "skipToContent": "Langsung ke konten" },
-    "app": {
-        "title": "Apa Tipe Dopaminmu?",
-        "subtitle": "Temukan bagaimana sistem reward otakmu membentuk kepribadianmu",
-        "startBtn": "Temukan Tipe Dopaminmu",
-        "startDesc": "8 skenario sehari-hari mengungkap neurokimia mana yang mendorong keputusan dan kebahagiaanmu."
+    "deepDiver": {
+      "name": "Deep Diver",
+      "desc": "Otakmu memberi reward pada fokus mendalam dan penguasaan. Kamu mendapat lonjakan dopamin terbesar dari tenggelam dalam masalah kompleks, mempelajari keterampilan baru, dan mencapai keahlian. Selalu kualitas daripada kuantitas."
     },
-    "quiz": {
-        "questionCounter": "Pertanyaan {{current}} dari {{total}}",
-        "midEncouragement": "Sudah setengah jalan! Profil otakmu sedang terbentuk..."
+    "socialSpark": {
+      "name": "Social Spark",
+      "desc": "Otakmu bersinar melalui koneksi manusia. Interaksi sosial, membuat orang lain tertawa, dan menjadi bagian dari kelompok yang hidup adalah bahan bakar dopaminmu. Kamu berenergi dari energi orang lain."
     },
-    "analyzing": {
-        "step1": "Memetakan jalur saraf...",
-        "step2": "Menganalisis pola reward...",
-        "step3": "Mengidentifikasi tipe dopaminmu..."
+    "comfortCreator": {
+      "name": "Comfort Creator",
+      "desc": "Otakmu menemukan reward dalam stabilitas dan rutinitas. Kamu mendapat dopamin stabil dari lingkungan nyaman, ritual yang familiar, dan menciptakan dunia yang aman dan nyaman. Kedamaianmu adalah kekuatan supermu."
     },
-    "q": {
-        "0": "Sabtu pagi tanpa rencana. Apa yang paling menarik?",
-        "1": "Kamu baru dapat bonus besar di kantor. Insting pertamamu?",
-        "2": "Kamu di pesta yang hampir tidak kenal siapa pun. Kamu...",
-        "3": "Temanmu mengajak mencoba olahraga ekstrem baru. Reaksimu?",
-        "4": "Kamu punya malam kosong. Cara ideal untuk mengisi ulang energi?",
-        "5": "Rekan kerja menyampaikan masalah di kantor. Kamu langsung...",
-        "6": "Kamu sedang merencanakan liburan. Apa yang paling penting?",
-        "7": "Kamu baru saja menyelesaikan proyek sulit. Selanjutnya mau apa?"
+    "challengeChaser": {
+      "name": "Challenge Chaser",
+      "desc": "Otakmu dirancang untuk kompetisi dan pencapaian. Peringkat, target, dan mengalahkan rekor pribadi membanjiri sistem dopaminmu. Kamu mengubah segalanya menjadi tantangan — dan kamu suka menang."
     },
-    "opt": {
-        "0a": "Mencoba tempat skydiving baru di dekat sini",
-        "0b": "Menghabiskan berjam-jam tenggelam dalam proyek hobi",
-        "0c": "Mengatur brunch dengan teman-teman",
-        "0d": "Tidur lama dan menikmati pagi yang nyaman di rumah",
-        "1a": "Memesan pengalaman penuh adrenalin",
-        "1b": "Investasi di kursus untuk menguasai skill baru",
-        "1c": "Mengadakan makan malam perayaan dengan teman",
-        "1d": "Menabung dan menikmati rasa aman",
-        "2a": "Langsung masuk percakapan dan kenalan dengan semua orang",
-        "2b": "Cari satu orang menarik untuk ngobrol mendalam",
-        "2c": "Jadi perekat sosial yang menghubungkan kelompok",
-        "2d": "Cari sudut tenang dan mengamati",
-        "3a": "Ayo sekarang! Aku siap total!",
-        "3b": "Aku riset dulu semuanya tentang itu",
-        "3c": "Hanya kalau ada rombongan teman yang ikut",
-        "3d": "Lebih baik nonton dari jarak aman",
-        "4a": "Sesuatu yang spontan dan seru",
-        "4b": "Tenggelam dalam proyek kreatif atau intelektual",
-        "4c": "Video call atau kumpul dengan teman dekat",
-        "4d": "Rutinitas nyaman: serial favorit, camilan, selimut",
-        "5a": "Bersemangat \u2014 ini kesempatan untuk membuktikan diri",
-        "5b": "Mulai menganalisis mendalam dari setiap sudut",
-        "5c": "Mengusulkan brainstorming bersama tim",
-        "5d": "Berpikir cara menyelesaikannya secara metodis dan tenang",
-        "6a": "Petualangan dan sensasi unik",
-        "6b": "Pendalaman budaya dan belajar",
-        "6c": "Pergi dengan teman dan membuat kenangan",
-        "6d": "Liburan santai dan nyaman",
-        "7a": "Langsung terjun ke tantangan yang lebih sulit",
-        "7b": "Merenungkan dengan mendalam apa yang sudah dipelajari",
-        "7c": "Merayakan bersama tim",
-        "7d": "Istirahat yang pantas"
-    },
-    "type": {
-        "thrillSeeker": {
-            "name": "Pencari Sensasi",
-            "desc": "Otakmu mendambakan stimulasi intens dan adrenalin. Kamu berkembang dalam risiko, kebaruan berkecepatan tinggi, dan gairah melampaui batas. Rutinitas adalah kelemahanmu \u2014 kamu butuh kegembiraan untuk merasa hidup. Dopaminmu melonjak paling tinggi saat momen tak terduga yang memacu jantung."
-        },
-        "deepDiver": {
-            "name": "Penyelam Dalam",
-            "desc": "Otakmu memberi reward pada fokus mendalam dan penguasaan. Kamu mudah masuk ke keadaan flow dan menemukan kepuasan dalam memahami sesuatu secara menyeluruh. Kamu lebih memilih 5 jam menyempurnakan satu hal daripada mencoba 10. Sistem dopaminmu disetel untuk keahlian dan kedalaman."
-        },
-        "socialSpark": {
-            "name": "Percikan Sosial",
-            "desc": "Otakmu menyala melalui koneksi manusia. Percakapan, tawa bersama, dan energi kelompok adalah sumber reward utamamu. Kamu adalah perekat yang menyatukan kelompok sosial, dan dopaminmu mencapai puncak selama interaksi sosial yang bermakna."
-        },
-        "comfortCreator": {
-            "name": "Pencipta Kenyamanan",
-            "desc": "Otakmu menemukan reward dalam stabilitas, kehangatan, dan kesenangan yang bisa diprediksi. Kamu ahli dalam menciptakan kenyamanan \u2014 membangun lingkungan yang terasa aman dan memelihara. Sistem dopaminmu menghargai ketenangan kaya serotonin dibanding kekacauan berisi adrenalin."
-        },
-        "challengeChaser": {
-            "name": "Pengejar Tantangan",
-            "desc": "Otakmu terhubung untuk pencapaian dan kompetisi. Menetapkan tujuan, memecahkan rekor, dan membuktikan diri mendorong sistem rewardmu. Kamu butuh kemajuan yang terukur untuk merasa puas. Dopaminmu melonjak paling kuat saat kamu menaklukkan sesuatu yang sulit."
-        },
-        "noveltyHunter": {
-            "name": "Pemburu Kebaruan",
-            "desc": "Otakmu mendambakan hal baru dan belum dijelajahi. Kamu tertarik pada tempat, ide, dan pengalaman yang belum ditemukan. Begitu sesuatu menjadi familiar, kamu sudah mencari penemuan berikutnya. Sistem dopaminmu dioptimalkan untuk pengalaman pertama kali."
-        }
-    },
-    "metrics": {
-        "dopamine": "Dopamin",
-        "serotonin": "Serotonin",
-        "adrenaline": "Adrenalin",
-        "oxytocin": "Oksitosin",
-        "endorphin": "Endorfin"
-    },
-    "result": {
-        "yourType": "Tipe Dopaminmu",
-        "brainChemistry": "Kimia Otakmu",
-        "share": "Bagikan Hasilmu",
-        "restart": "Coba Lagi",
-        "shareText": "Aku tipe {{type}}! Apa tipe dopaminmu?"
-    },
-    "share": {
-        "kakao": "KakaoTalk",
-        "twitter": "Twitter",
-        "facebook": "Facebook",
-        "copy": "Salin Link",
-        "copied": "Tersalin!"
+    "noveltyHunter": {
+      "name": "Novelty Hunter",
+      "desc": "Otakmu kecanduan hal-hal baru dan tidak dikenal. Menjelajahi wilayah yang belum dipetakan, menemukan permata tersembunyi, dan mencoba hal yang belum pernah dicoba orang lain memberimu lonjakan dopamin ultimate."
     }
+  }
 }

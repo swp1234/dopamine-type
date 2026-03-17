@@ -1,117 +1,115 @@
 {
-    "meta": {
-        "title": "\u00dccretsiz Dopamin Tipi Testi - Beyninin \u00d6d\u00fcl Tarz\u0131 Ne?",
-        "description": "\u00dccretsiz dopamin tipi testini \u00e7\u00f6z. 8 soru beyninin \u00f6d\u00fcl tarz\u0131n\u0131 ortaya \u00e7\u0131kar\u0131r.",
-        "participants": "14.200+",
-        "participantsLabel": "kat\u0131l\u0131mc\u0131",
-        "timeEstimate": "~2 dk \u2022 8 soru"
+  "meta": {
+    "page_title": "Dopamin Tipi Testi - Beyninin Ödül Tarzı Nedir? | DopaBrain",
+    "description": "Beyninin ödül sistemini keşfetmek için ücretsiz dopamin tipi testini çöz. 8 soru senin Thrill Seeker, Deep Diver veya Social Spark olup olmadığını ortaya çıkarır. Anında sonuç!",
+    "keywords": "dopamin testi, dopamin quiz, dopamin tipi, beyin ödül sistemi, nörobilim kişilik testi",
+    "og_title": "Dopamin Tipi Testi - Beyninin Ödül Tarzı Nedir?",
+    "og_description": "Beyninin ödül sistemini keşfetmek için ücretsiz dopamin tipi testini çöz. 8 soru dopamin kişiliğini ortaya çıkarır!",
+    "twitter_title": "Dopamin Tipi Testi - Beyninin Ödül Tarzı Nedir?",
+    "twitter_description": "8 soru dopamin kişilik tipini ortaya çıkarır. Sen Thrill Seeker mısın yoksa Deep Diver mı?"
+  },
+  "app": { "skipLink": "Ana içeriğe geç" },
+  "loader": { "loading": "Yükleniyor..." },
+  "start": {
+    "social_proof": "katılımcı",
+    "title": "Dopamin Tipin Nedir?",
+    "subtitle": "Beyninin ödül sisteminin kişiliğini nasıl şekillendirdiğini keşfet",
+    "questions_count": "8 soru"
+  },
+  "button": {
+    "start": "Dopamin Tipini Keşfet",
+    "restart": "Tekrar Dene",
+    "share_kakao": "KakaoTalk",
+    "share_twitter": "Twitter",
+    "share_facebook": "Facebook",
+    "share_copy": "Linki Kopyala"
+  },
+  "analyzing": {
+    "title": "Dopamin profilin analiz ediliyor...",
+    "step1": "Ödül kalıpları taranıyor...",
+    "step2": "Sinir yolları haritalanıyor...",
+    "step3": "Dopamin tipi belirleniyor..."
+  },
+  "result": {
+    "your_type": "Dopamin Tipin",
+    "metrics_title": "Nörotransmitter Profili",
+    "share": "Sonucunu Paylaş"
+  },
+  "metric": {
+    "dopamine": "Dopamin",
+    "serotonin": "Serotonin",
+    "adrenaline": "Adrenalin",
+    "oxytocin": "Oksitosin",
+    "endorphin": "Endorfin"
+  },
+  "game": { "back": "DopaBrain Ana Sayfa" },
+  "share": { "text": "Benim dopamin tipim {type}! Senin ki ne?" },
+  "q": {
+    "0": "Hafta sonu seni en çok ne enerjilendiriyor?",
+    "0a": "Ekstrem sporlar veya adrenalin dolu aktiviteler",
+    "0b": "Derin odaklanma projesi veya öğrenme seansı",
+    "0c": "Arkadaşlarla büyük bir sosyal toplantı",
+    "0d": "Evde rahat bir rutin",
+    "1": "Yeni bir zorluğa nasıl yaklaşıyorsun?",
+    "1a": "Rekabetçi hedefler koyup sıkı çalışıyorum",
+    "1b": "Dalmadan önce tüm açıları keşfediyorum",
+    "1c": "Hemen atlıyorum, sonra hallederim",
+    "1d": "Dikkatli plan yapıp güvenli olana bağlı kalıyorum",
+    "2": "Seni ne tür içerikler yakalıyor?",
+    "2a": "Viral sosyal medya trendleri",
+    "2b": "Derin belgeseller veya uzun okumalar",
+    "2c": "Rekabetçi sporlar veya e-sporlar",
+    "2d": "Sakinleştirici ASMR veya lo-fi ritimler",
+    "3": "İdeal tatilin?",
+    "3a": "Paraşütle atlama, bungee jumping, ekstrem macera",
+    "3b": "Büyük bir arkadaş grubuyla parti şehri",
+    "3c": "Doğada huzurlu bir kabin",
+    "3d": "Bilinmeyen yerlere plansız sırt çantasıyla seyahat",
+    "4": "İşte veya okulda seni ne motive ediyor?",
+    "4a": "Hedefleri aşmak ve sıralamalarda yükselmek",
+    "4b": "Bir beceriyi mükemmelliğe ulaştırmak",
+    "4c": "Takım enerjisi, övgü ve işbirliği",
+    "4d": "Stabil bir rutin ve rahat ortam",
+    "5": "Stresle nasıl başa çıkıyorsun?",
+    "5a": "Yoğun egzersiz veya fiziksel aktivite",
+    "5b": "Arkadaşlar veya aileyle konuşarak",
+    "5c": "Meditasyon, günlük tutma veya yalnız düşünme",
+    "5d": "Tamamen yeni ve farklı bir şey deneyerek",
+    "6": "Bir süper güç seç:",
+    "6a": "Süper hız — heyecanı hisset",
+    "6b": "Zamanı dondurma — nihai derin odaklanma",
+    "6c": "Telepati — herkesle bağlantı kur",
+    "6d": "Işınlanma — her yeri anında keşfet",
+    "7": "Seni en mutlu eden şey ne?",
+    "7a": "Bir yarışmayı kazanmak veya bir hedefe ulaşmak",
+    "7b": "Rahat yiyeceklerle mükemmel rahat bir akşam",
+    "7c": "Bir toplantıda herkesi güldürmek",
+    "7d": "Başka kimsenin bilmediği bir şeyi keşfetmek"
+  },
+  "type": {
+    "thrillSeeker": {
+      "name": "Thrill Seeker",
+      "desc": "Beynin yoğunluk ve adrenalini arzuluyor. Ekstrem deneyimlere, yüksek riskli durumlara ve sınırları zorlama heyecanına çekiliyorsun. Dopaminin sınırda yaşarken en çok yükseliyor."
     },
-    "loader": { "loading": "Y\u00fckleniyor..." },
-    "a11y": { "skipToContent": "Ana i\u00e7eri\u011fe ge\u00e7" },
-    "app": {
-        "title": "Senin Dopamin Tipin Ne?",
-        "subtitle": "Beyninin \u00f6d\u00fcl sistemi ki\u015fili\u011fini nas\u0131l \u015fekillendiriyor, ke\u015ffet",
-        "startBtn": "Dopamin Tipini Ke\u015ffet",
-        "startDesc": "8 g\u00fcnl\u00fck senaryo, kararlar\u0131n\u0131 ve mutlulu\u011funu hangi n\u00f6rokimyasal\u0131n y\u00f6nlendirdi\u011fini ortaya koyar."
+    "deepDiver": {
+      "name": "Deep Diver",
+      "desc": "Beynin derin odaklanmayı ve ustalığı ödüllendiriyor. En büyük dopamin patlamalarını karmaşık problemlerde kaybolmaktan, yeni beceriler öğrenmekten ve uzmanlığa ulaşmaktan alıyorsun. Her zaman nicelikten çok nitelik."
     },
-    "quiz": {
-        "questionCounter": "Soru {{current}} / {{total}}",
-        "midEncouragement": "Yar\u0131 yolda! Beyin profilin \u015fekilleniyor..."
+    "socialSpark": {
+      "name": "Social Spark",
+      "desc": "Beynin insan bağlantısıyla parlıyor. Sosyal etkileşimler, başkalarını güldürmek ve canlı bir grubun parçası olmak dopamin yakıtın. Başkalarının enerjisiyle enerjin yükleniyor."
     },
-    "analyzing": {
-        "step1": "N\u00f6ral yollar haritaland\u0131r\u0131l\u0131yor...",
-        "step2": "\u00d6d\u00fcl kal\u0131plar\u0131 analiz ediliyor...",
-        "step3": "Dopamin tipin belirleniyor..."
+    "comfortCreator": {
+      "name": "Comfort Creator",
+      "desc": "Beynin istikrar ve rutinde ödül buluyor. Rahat ortamlardan, tanıdık ritüellerden ve güvenli, rahat bir dünya yaratmaktan sürekli dopamin alıyorsun. Sakinliğin süper gücün."
     },
-    "q": {
-        "0": "Plans\u0131z bir cumartesi sabah\u0131. En \u00e7ok ne cazip geliyor?",
-        "1": "I\u015fte b\u00fcy\u00fck bir prim ald\u0131n. \u0130lk i\u00e7g\u00fcd\u00fcn ne?",
-        "2": "Neredeyse kimseyi tan\u0131mad\u0131\u011f\u0131n bir partidesin. Sen...",
-        "3": "Arkada\u015f\u0131n yeni bir ekstrem spor \u00f6neriyor. Tepkin ne?",
-        "4": "Bo\u015f bir ak\u015fam\u0131n var. \u0130deal enerji toplama yolun ne?",
-        "5": "Bir meslekta\u015f i\u015fte bir sorun sunuyor. Hemen...",
-        "6": "Tatil planl\u0131yorsun. En \u00f6nemli olan ne?",
-        "7": "Zor bir projeyi yeni bitirdin. S\u0131rada ne istiyorsun?"
+    "challengeChaser": {
+      "name": "Challenge Chaser",
+      "desc": "Beynin rekabet ve başarı için tasarlanmış. Sıralamalar, hedefler ve kişisel en iyileri geçmek dopamin sistemini dolduruyor. Her şeyi bir meydan okumaya dönüştürüyorsun — ve kazanmayı seviyorsun."
     },
-    "opt": {
-        "0a": "Yak\u0131ndaki yeni yamaç para\u015f\u00fct\u00fc yerini denemek",
-        "0b": "Saatlerce bir hobi projesine g\u00f6m\u00fclmek",
-        "0c": "Arkada\u015flarla brunch organize etmek",
-        "0d": "Ge\u00e7 saate kadar uyuyup evde rahat bir sabah ge\u00e7irmek",
-        "1a": "Adrenalin dolu bir deneyim rezerve etmek",
-        "1b": "Yeni bir beceri i\u00e7in kursa yat\u0131r\u0131m yapmak",
-        "1c": "Arkada\u015flarla kutlama yeme\u011fi vermek",
-        "1d": "Biriktirmek ve g\u00fcvenli\u011fin tad\u0131n\u0131 \u00e7\u0131karmak",
-        "2a": "Sohbetlere dal\u0131p herkesle tan\u0131\u015fmak",
-        "2b": "Derin bir sohbet i\u00e7in ilgin\u00e7 bir ki\u015fi bulmak",
-        "2c": "Gruplar\u0131 birle\u015ftiren sosyal yap\u0131\u015ft\u0131r\u0131c\u0131 olmak",
-        "2d": "Sessiz bir k\u00f6\u015fe bulup g\u00f6zlemlemek",
-        "3a": "Hemen gidelim! Haz\u0131r\u0131m!",
-        "3b": "\u00d6nce her \u015feyi ara\u015ft\u0131r\u0131r\u0131m",
-        "3c": "Ancak bir arkada\u015f grubu gelirse",
-        "3d": "G\u00fcvenli mesafeden izlemeyi tercih ederim",
-        "4a": "Spontan ve heyecan verici bir \u015fey",
-        "4b": "Yarat\u0131c\u0131 veya entelekt\u00fcel bir projede kaybolmak",
-        "4c": "Yak\u0131n arkada\u015flarla g\u00f6r\u00fcnt\u00fcl\u00fc arama veya bulu\u015fma",
-        "4d": "Rahat rutin: favori dizi, at\u0131\u015ft\u0131rmal\u0131klar, battaniyeler",
-        "5a": "Heyecanlan\u0131rs\u0131n \u2014 kendini kan\u0131tlama f\u0131rsat\u0131",
-        "5b": "Her a\u00e7\u0131dan derinlemesine analiz etmeye ba\u015flars\u0131n",
-        "5c": "Ekip olarak beyin f\u0131rt\u0131nas\u0131 \u00f6nerirsin",
-        "5d": "Metodik ve sakin bir \u015fekilde \u00e7\u00f6zmeyi d\u00fc\u015f\u00fcn\u00fcrs\u00fcn",
-        "6a": "Macera ve e\u015fsiz heyecanlar",
-        "6b": "K\u00fclt\u00fcrel ke\u015fif ve \u00f6\u011frenme",
-        "6c": "Arkada\u015flarla gidip an\u0131lar biriktirmek",
-        "6d": "Rahat ve huzurlu bir tatil",
-        "7a": "Daha da zor bir \u015feye at\u0131lmak",
-        "7b": "Ne \u00f6\u011frendi\u011fimi derinden d\u00fc\u015f\u00fcnmek",
-        "7c": "Ekiple kutlamak",
-        "7d": "Hak etti\u011fim dinlenmeyi almak"
-    },
-    "type": {
-        "thrillSeeker": {
-            "name": "Heyecan Arayanc\u0131s\u0131",
-            "desc": "Beynin yo\u011fun uyar\u0131 ve adrenaline susar. Risk, y\u00fcksek h\u0131zda yenilik ve s\u0131n\u0131rlar\u0131 zorlaman\u0131n heyecan\u0131nda geli\u015firsin. Rutin senin kriptonitindir \u2014 ya\u015fad\u0131\u011f\u0131n\u0131 hissetmek i\u00e7in heyecana ihtiyac\u0131n var. \u00d6ng\u00f6r\u00fclemeyen, kalp at\u0131\u015f\u0131n\u0131 h\u0131zland\u0131ran anlarda dopaminin en y\u00fckse\u011fe \u00e7\u0131kar."
-        },
-        "deepDiver": {
-            "name": "Derin Dal\u0131\u015f\u00e7\u0131",
-            "desc": "Beynin derin odaklanma ve ustal\u0131\u011f\u0131 \u00f6d\u00fcllendirir. Kolayca ak\u0131\u015f durumuna girersin ve bir \u015feyi tamamen anlamaktan memnuniyet duyars\u0131n. 10 \u015fey denemektense 1 \u015feyi 5 saat m\u00fckemmelle\u015ftirmeyi tercih edersin. Dopamin sistemin uzmanl\u0131k ve derinlik i\u00e7in ayarl\u0131d\u0131r."
-        },
-        "socialSpark": {
-            "name": "Sosyal K\u0131v\u0131lc\u0131m",
-            "desc": "Beynin insan ba\u011flant\u0131s\u0131yla ayd\u0131nlan\u0131r. Sohbetler, payla\u015f\u0131lan kahkahalar ve grup enerjisi ba\u015fl\u0131ca \u00f6d\u00fcl kaynaklar\u0131nd\u0131r. Sosyal gruplar\u0131 bir arada tutan yap\u0131\u015ft\u0131r\u0131c\u0131s\u0131n ve anlaml\u0131 sosyal etkile\u015fimler s\u0131ras\u0131nda dopaminin zirveye ula\u015f\u0131r."
-        },
-        "comfortCreator": {
-            "name": "Konfor Yarat\u0131c\u0131s\u0131",
-            "desc": "Beynin istikrar, s\u0131cakl\u0131k ve \u00f6ng\u00f6r\u00fclebilir zevklerde \u00f6d\u00fcl bulur. Rahatl\u0131k ustas\u0131s\u0131n \u2014 g\u00fcvenli ve besleyici hissettiren ortamlar yarat\u0131rs\u0131n. Dopamin sistemin, adrenalin kaosundan \u00e7ok seratonin dolu sakinli\u011fi de\u011ferlendirir."
-        },
-        "challengeChaser": {
-            "name": "Meydan Okuma Takip\u00e7isi",
-            "desc": "Beynin ba\u015far\u0131 ve rekabet i\u00e7in kablolanm\u0131\u015ft\u0131r. Hedef koymak, rekor k\u0131rmak ve kendini kan\u0131tlamak \u00f6d\u00fcl sistemini harekete ge\u00e7irir. Tatmin olmak i\u00e7in \u00f6l\u00e7\u00fclebilir ilerlemeye ihtiyac\u0131n var. Zor bir \u015feyi fethetti\u011finde dopaminin en g\u00fc\u00e7l\u00fc \u015fekilde y\u00fckselir."
-        },
-        "noveltyHunter": {
-            "name": "Yenilik Avc\u0131s\u0131",
-            "desc": "Beynin yeni ve ke\u015ffedilmemi\u015f olana susar. Hen\u00fcz ke\u015ffedilmemi\u015f yerler, fikirler ve deneyimlere \u00e7ekilirsin. Bir \u015fey tan\u0131d\u0131k hale geldi\u011fi an, zaten bir sonraki ke\u015ffi ar\u0131yorsundur. Dopamin sistemin ilk kez ya\u015fanan deneyimler i\u00e7in optimize edilmi\u015ftir."
-        }
-    },
-    "metrics": {
-        "dopamine": "Dopamin",
-        "serotonin": "Serotonin",
-        "adrenaline": "Adrenalin",
-        "oxytocin": "Oksitosin",
-        "endorphin": "Endorfin"
-    },
-    "result": {
-        "yourType": "Dopamin Tipin",
-        "brainChemistry": "Beyin Kimyan",
-        "share": "Sonucunu Payla\u015f",
-        "restart": "Tekrar \u00c7\u00f6z",
-        "shareText": "Ben {{type}} \u00e7\u0131kt\u0131m! Senin dopamin tipin ne?"
-    },
-    "share": {
-        "kakao": "KakaoTalk",
-        "twitter": "Twitter",
-        "facebook": "Facebook",
-        "copy": "Linki Kopyala",
-        "copied": "Kopyaland\u0131!"
+    "noveltyHunter": {
+      "name": "Novelty Hunter",
+      "desc": "Beynin yeni ve bilinmeyene bağımlı. Keşfedilmemiş bölgeleri araştırmak, gizli mücevherleri bulmak ve kimsenin denemediği şeyleri denemek sana nihai dopamin patlaması veriyor."
     }
+  }
 }
