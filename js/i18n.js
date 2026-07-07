@@ -9,12 +9,20 @@ try {
         this.translations = {};
         this.supportedLanguages = SUPPORTED;
         this.currentLang = this.detectLanguage();
+        document.documentElement.lang = this.currentLang;
         this.isLoading = false;
     }
 
     I18n.prototype.detectLanguage = function() {
-        var saved = localStorage.getItem('preferredLanguage');
-        if (saved && SUPPORTED.indexOf(saved) !== -1) return saved;
+        try {
+            var params = new URLSearchParams(window.location.search);
+            var urlLang = params.get('lang');
+            if (urlLang && SUPPORTED.indexOf(urlLang) !== -1) return urlLang;
+        } catch (e) {}
+        try {
+            var saved = localStorage.getItem('preferredLanguage');
+            if (saved && SUPPORTED.indexOf(saved) !== -1) return saved;
+        } catch (e) {}
         var browser = (navigator.language || '').split('-')[0].toLowerCase();
         if (SUPPORTED.indexOf(browser) !== -1) return browser;
         return 'ko';
@@ -62,7 +70,8 @@ try {
     I18n.prototype.setLanguage = function(lang) {
         if (SUPPORTED.indexOf(lang) === -1) return Promise.resolve();
         this.currentLang = lang;
-        localStorage.setItem('preferredLanguage', lang);
+        document.documentElement.lang = lang;
+        try { localStorage.setItem('preferredLanguage', lang); } catch (e) {}
         var self = this;
         return this.loadTranslations(lang).then(function() {
             self.updateUI();
@@ -72,6 +81,7 @@ try {
 
     I18n.prototype.updateUI = function() {
         var self = this;
+        document.documentElement.lang = self.currentLang;
         document.querySelectorAll('[data-i18n]').forEach(function(el) {
             var key = el.getAttribute('data-i18n');
             var text = self.t(key);
