@@ -1,10 +1,10 @@
-const CACHE_NAME = 'dopamine-type-v2';
+const CACHE_NAME = 'dopamine-type-v3';
 const ASSETS = [
   '/dopamine-type/',
   '/dopamine-type/index.html',
-  '/dopamine-type/css/style.css',
-  '/dopamine-type/js/app.js',
-  '/dopamine-type/js/i18n.js',
+  '/dopamine-type/css/style.css?v=20260905-2',
+  '/dopamine-type/js/app.js?v=20260905-2',
+  '/dopamine-type/js/i18n.js?v=20260905-2',
   '/dopamine-type/js/locales/de.json',
   '/dopamine-type/js/locales/en.json',
   '/dopamine-type/js/locales/es.json',
