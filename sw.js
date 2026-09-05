@@ -1,5 +1,38 @@
-const CACHE_NAME = 'dopamine-type-v1';
-const ASSETS = ['/', '/index.html', '/css/style.css', '/js/app.js', '/js/i18n.js', '/manifest.json', '/icon-192.svg', '/icon-512.svg'];
-self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE_NAME).then(c => c.addAll(ASSETS))); self.skipWaiting(); });
-self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE_NAME).map(k => caches.delete(k))))); self.clients.claim(); });
-self.addEventListener('fetch', e => { e.respondWith(caches.match(e.request).then(r => r || fetch(e.request))); });
+const CACHE_NAME = 'dopamine-type-v2';
+const ASSETS = [
+  '/dopamine-type/',
+  '/dopamine-type/index.html',
+  '/dopamine-type/css/style.css',
+  '/dopamine-type/js/app.js',
+  '/dopamine-type/js/i18n.js',
+  '/dopamine-type/js/locales/de.json',
+  '/dopamine-type/js/locales/en.json',
+  '/dopamine-type/js/locales/es.json',
+  '/dopamine-type/js/locales/fr.json',
+  '/dopamine-type/js/locales/hi.json',
+  '/dopamine-type/js/locales/id.json',
+  '/dopamine-type/js/locales/ja.json',
+  '/dopamine-type/js/locales/ko.json',
+  '/dopamine-type/js/locales/pt.json',
+  '/dopamine-type/js/locales/ru.json',
+  '/dopamine-type/js/locales/tr.json',
+  '/dopamine-type/js/locales/zh.json',
+  '/dopamine-type/manifest.json',
+  '/dopamine-type/icon-192.svg',
+  '/dopamine-type/icon-512.svg'
+];
+
+self.addEventListener('install', event => {
+  event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS)));
+  self.skipWaiting();
+});
+
+self.addEventListener('activate', event => {
+  event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE_NAME).map(key => caches.delete(key)))));
+  self.clients.claim();
+});
+
+self.addEventListener('fetch', event => {
+  if (event.request.method !== 'GET' || new URL(event.request.url).origin !== self.location.origin) return;
+  event.respondWith(caches.match(event.request).then(response => response || fetch(event.request)));
+});

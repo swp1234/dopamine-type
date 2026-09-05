@@ -1,5 +1,5 @@
-// Dopamine Type Test - What's Your Dopamine Profile?
-// 8 questions, 6 types, score-based classification
+// Reward Preference Reflection
+// Eight scenarios, six authored labels; not a dopamine or brain-chemistry measurement.
 
 const QUESTIONS = [
     { id: 0, questionKey: 'q.0', options: ['0a', '0b', '0c', '0d'] },
@@ -104,15 +104,6 @@ const TYPES = {
     }
 };
 
-const METRICS = {
-    thrillSeeker:    { dopamine: 95, serotonin: 40, adrenaline: 98, oxytocin: 35, endorphin: 85 },
-    deepDiver:       { dopamine: 88, serotonin: 90, adrenaline: 30, oxytocin: 50, endorphin: 75 },
-    socialSpark:     { dopamine: 85, serotonin: 70, adrenaline: 50, oxytocin: 95, endorphin: 80 },
-    comfortCreator:  { dopamine: 70, serotonin: 95, adrenaline: 20, oxytocin: 85, endorphin: 90 },
-    challengeChaser: { dopamine: 92, serotonin: 55, adrenaline: 80, oxytocin: 40, endorphin: 70 },
-    noveltyHunter:   { dopamine: 90, serotonin: 45, adrenaline: 65, oxytocin: 55, endorphin: 60 }
-};
-
 class DopamineTypeApp {
     constructor() {
         this.currentQuestion = 0;
@@ -120,6 +111,9 @@ class DopamineTypeApp {
         this.scores = [0, 0, 0, 0, 0, 0]; // 6 types
         this.resultType = null;
         this.resultTypeKey = null;
+        this.emittedEvents = new Set();
+        this.hasCompleted = false;
+        this.isTransitioning = false;
     }
 
     async init() {
@@ -131,13 +125,11 @@ class DopamineTypeApp {
             // i18n init failed — continue without translations
         }
 
+        this.sanitizeUrl();
         this.bindEvents();
+        this.syncLocalizedActions();
         this.initTheme();
         this.hideLoader();
-
-        if (typeof gtag === 'function') {
-            gtag('event', 'page_view', { page_title: 'Dopamine Type Test' });
-        }
     }
 
     t(key) {
@@ -168,27 +160,39 @@ class DopamineTypeApp {
                 langMenu.classList.toggle('hidden');
             });
             document.querySelectorAll('.lang-option').forEach(function(btn) {
-                btn.addEventListener('click', function() {
+                btn.addEventListener('click', async function() {
                     var lang = btn.getAttribute('data-lang');
-                    if (window.i18n) window.i18n.setLanguage(lang);
+                    if (window.i18n) await window.i18n.setLanguage(lang);
+                    self.syncLocalizedActions();
                     langMenu.classList.add('hidden');
                 });
             });
             document.addEventListener('click', function() { langMenu.classList.add('hidden'); });
         }
 
-        // Share buttons
-        var shareKakao = document.getElementById('share-kakao');
-        if (shareKakao) shareKakao.addEventListener('click', function() { self.shareKakao(); });
+        document.getElementById('share-reflection')?.addEventListener('click', function() { self.shareReflection(); });
+        document.getElementById('next-habit')?.addEventListener('click', function() { self.trackOnce('reward_habit_click'); });
+        document.getElementById('next-guide')?.addEventListener('click', function() { self.trackOnce('reward_guide_click'); });
+    }
 
-        var shareTwitter = document.getElementById('share-twitter');
-        if (shareTwitter) shareTwitter.addEventListener('click', function() { self.shareTwitter(); });
+    sanitizeUrl() {
+        var url = new URL(window.location.href);
+        var lang = url.searchParams.get('lang');
+        var clean = new URL(url.origin + url.pathname);
+        if (lang && window.i18n?.supportedLanguages.includes(lang)) clean.searchParams.set('lang', lang);
+        if (clean.href !== url.href) history.replaceState(null, '', clean.pathname + clean.search);
+    }
 
-        var shareFacebook = document.getElementById('share-facebook');
-        if (shareFacebook) shareFacebook.addEventListener('click', function() { self.shareFacebook(); });
+    syncLocalizedActions() {
+        var lang = window.i18n?.getCurrentLanguage() || 'en';
+        document.getElementById('next-habit')?.setAttribute('href', '/habit-tracker/?lang=' + lang);
+        document.getElementById('next-guide')?.setAttribute('href', '/portal/blog/' + lang + '/dopamine-type-guide.html');
+    }
 
-        var shareCopy = document.getElementById('share-copy');
-        if (shareCopy) shareCopy.addEventListener('click', function() { self.shareCopy(); });
+    trackOnce(name) {
+        if (this.emittedEvents.has(name)) return;
+        this.emittedEvents.add(name);
+        if (typeof gtag === 'function') gtag('event', name);
     }
 
     hideLoader() {
@@ -237,9 +241,7 @@ class DopamineTypeApp {
         this.showScreen('question-screen');
         this.renderQuestion();
 
-        if (typeof gtag === 'function') {
-            gtag('event', 'quiz_start', { event_category: 'dopamine_type' });
-        }
+        this.trackOnce('reward_reflection_start');
     }
 
     renderQuestion() {
@@ -277,8 +279,8 @@ class DopamineTypeApp {
 
     selectOption(questionId, optionIdx, btn) {
         // Prevent double-click
-        if (this._transitioning) return;
-        this._transitioning = true;
+        if (this.isTransitioning) return;
+        this.isTransitioning = true;
 
         // Visual feedback
         document.querySelectorAll('.option-btn').forEach(function(b) { b.classList.remove('selected'); });
@@ -297,7 +299,7 @@ class DopamineTypeApp {
 
         var self = this;
         setTimeout(function() {
-            self._transitioning = false;
+            self.isTransitioning = false;
             self.currentQuestion++;
             if (self.currentQuestion < QUESTIONS.length) {
                 self.renderQuestion();
@@ -373,43 +375,11 @@ class DopamineTypeApp {
         var desc = document.getElementById('result-description');
         if (desc) desc.textContent = this.t(type.descKey);
 
-        // Metrics bars
-        var metricsGrid = document.getElementById('metrics-grid');
-        if (metricsGrid) {
-            metricsGrid.innerHTML = '';
-            var metrics = METRICS[typeKey];
-            var metricKeys = ['dopamine', 'serotonin', 'adrenaline', 'oxytocin', 'endorphin'];
-            var self = this;
-
-            metricKeys.forEach(function(key) {
-                var val = metrics[key];
-                var row = document.createElement('div');
-                row.className = 'metric-row';
-                row.innerHTML =
-                    '<span class="metric-label">' + self.t('metric.' + key) + '</span>' +
-                    '<div class="metric-bar-bg"><div class="metric-bar-fill" style="background:' + type.color + '"></div></div>' +
-                    '<span class="metric-value">' + val + '</span>';
-                metricsGrid.appendChild(row);
-
-                // Animate bar after append
-                setTimeout(function() {
-                    var barFill = row.querySelector('.metric-bar-fill');
-                    if (barFill) barFill.style.width = val + '%';
-                }, 100);
-            });
-        }
-
         // Confetti
         this.spawnConfetti();
 
-        // GA4
-        if (typeof gtag === 'function') {
-            gtag('event', 'quiz_complete', {
-                event_category: 'dopamine_type',
-                event_label: typeKey,
-                value: 1
-            });
-        }
+        this.hasCompleted = true;
+        this.trackOnce('reward_reflection_complete');
     }
 
     spawnConfetti() {
@@ -430,6 +400,9 @@ class DopamineTypeApp {
     }
 
     restart() {
+        if (!this.hasCompleted) return;
+        this.trackOnce('reward_reflection_retry');
+        this.hasCompleted = false;
         this.currentQuestion = 0;
         this.answers = [];
         this.scores = [0, 0, 0, 0, 0, 0];
@@ -439,77 +412,22 @@ class DopamineTypeApp {
         window.scrollTo(0, 0);
     }
 
-    // Share helpers
-    getShareText() {
-        if (!this.resultType) return '';
-        return this.t('share.text').replace('{type}', this.t(this.resultType.nameKey));
-    }
-
     getShareUrl() {
         return 'https://dopabrain.com/dopamine-type/';
     }
 
-    shareKakao() {
-        if (typeof gtag === 'function') {
-            gtag('event', 'share_click', { method: 'kakao', app_name: 'dopamine-type' });
-        }
-        var text = this.getShareText();
-        var url = 'https://sharer.kakao.com/talk/friends/picker/link?url=' + encodeURIComponent(this.getShareUrl()) + '&text=' + encodeURIComponent(text);
-        window.open(url, '_blank', 'width=600,height=400');
-    }
-
-    shareTwitter() {
-        if (typeof gtag === 'function') {
-            gtag('event', 'share_click', { method: 'twitter', app_name: 'dopamine-type' });
-        }
-        var text = this.getShareText();
-        var url = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(this.getShareUrl());
-        window.open(url, '_blank', 'width=600,height=400');
-    }
-
-    shareFacebook() {
-        if (typeof gtag === 'function') {
-            gtag('event', 'share_click', { method: 'facebook', app_name: 'dopamine-type' });
-        }
-        var url = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(this.getShareUrl());
-        window.open(url, '_blank', 'width=600,height=400');
-    }
-
-    shareCopy() {
-        if (typeof gtag === 'function') {
-            gtag('event', 'share_click', { method: 'copy', app_name: 'dopamine-type' });
-        }
-        var text = this.getShareText() + ' ' + this.getShareUrl();
-        var btn = document.getElementById('share-copy');
+    async shareReflection() {
+        var text = this.t('share.text');
+        var data = { title: this.t('start.title'), text: text, url: this.getShareUrl() };
+        var status = document.getElementById('share-status');
         try {
-            navigator.clipboard.writeText(text).then(function() {
-                if (btn) {
-                    var original = btn.innerHTML;
-                    btn.textContent = '\u2705 Copied!';
-                    setTimeout(function() { btn.innerHTML = original; }, 2000);
-                }
-            }).catch(function() {
-                fallbackCopy(text, btn);
-            });
+            if (navigator.share) await navigator.share(data);
+            else await navigator.clipboard.writeText(data.text + ' ' + data.url);
+            if (status) status.textContent = this.t('share.success');
+            this.trackOnce('reward_share_success');
         } catch (e) {
-            fallbackCopy(text, btn);
+            if (e?.name !== 'AbortError' && status) status.textContent = this.t('share.unavailable');
         }
-    }
-}
-
-function fallbackCopy(text, btn) {
-    var ta = document.createElement('textarea');
-    ta.value = text;
-    ta.style.position = 'fixed';
-    ta.style.opacity = '0';
-    document.body.appendChild(ta);
-    ta.select();
-    document.execCommand('copy');
-    document.body.removeChild(ta);
-    if (btn) {
-        var original = btn.innerHTML;
-        btn.textContent = '\u2705 Copied!';
-        setTimeout(function() { btn.innerHTML = original; }, 2000);
     }
 }
 

@@ -1,86 +1,92 @@
 {
   "meta": {
-    "page_title": "Dopamin-Typ-Test - Welcher Belohnungsstil ist deiner? | DopaBrain",
-    "description": "Mache den kostenlosen Dopamin-Typ-Test und entdecke dein Belohnungssystem. 8 Fragen zeigen, ob du ein Nervenkitzel-Jäger, Tieftaucher oder sozialer Funke bist. Sofortige Ergebnisse!",
-    "keywords": "dopamin test, dopamin quiz, dopamin typ, gehirn belohnungssystem, neurowissenschaft persönlichkeitstest",
-    "og_title": "Dopamin-Typ-Test - Welcher Belohnungsstil ist deiner?",
-    "og_description": "Mache den kostenlosen Dopamin-Typ-Test und entdecke dein Belohnungssystem. 8 Fragen enthüllen deinen Dopamin-Persönlichkeitstyp!",
-    "twitter_title": "Dopamin-Typ-Test - Welcher Belohnungsstil ist deiner?",
-    "twitter_description": "8 Fragen enthüllen deinen Dopamin-Persönlichkeitstyp. Bist du ein Nervenkitzel-Jäger oder Tieftaucher?"
+    "page_title": "Reflexion über Belohnungspräferenzen | DopaBrain",
+    "description": "Acht Alltagsentscheidungen ordnen deine Antworten einem selbst erstellten Belohnungspräferenz-Muster zu. Dopamin oder Gehirnchemie werden nicht gemessen.",
+    "keywords": "dopamine type quiz, reward preference reflection, motivation style questions",
+    "og_title": "Reflexion über Belohnungspräferenzen",
+    "og_description": "Acht Alltagsentscheidungen ordnen deine Antworten einem selbst erstellten Belohnungspräferenz-Muster zu. Dopamin oder Gehirnchemie werden nicht gemessen.",
+    "twitter_title": "Reflexion über Belohnungspräferenzen",
+    "twitter_description": "Acht Alltagsentscheidungen ordnen deine Antworten einem selbst erstellten Belohnungspräferenz-Muster zu. Dopamin oder Gehirnchemie werden nicht gemessen."
   },
-  "app": { "skipLink": "Zum Hauptinhalt springen" },
-  "loader": { "loading": "Lädt..." },
+  "app": {
+    "skipLink": "Zum Hauptinhalt springen"
+  },
+  "loader": {
+    "loading": "Lädt..."
+  },
   "start": {
-    "social_proof": "Teilnehmer",
-    "title": "Was ist dein Dopamin-Typ?",
-    "subtitle": "Entdecke, wie das Belohnungssystem deines Gehirns deine Persönlichkeit formt",
-    "questions_count": "8 Fragen"
+    "title": "Welche Art von Belohnung hält dich bei der Sache?",
+    "subtitle": "Acht Alltagsentscheidungen zeigen ein Reflexionsmuster, nicht deinen Dopaminwert.",
+    "questions_count": "8 Fragen",
+    "feature_method": "Methode: acht Situationen, je vier Antworten und sechs selbst erstellte Muster.",
+    "method": "Jede Antwort vergibt 0–3 Punkte an die Muster. Die höchste Summe gewinnt; Gleichstände folgen der Listenreihenfolge.",
+    "boundary": "Diese Reflexion misst weder Dopamin noch Neurotransmitter, Persönlichkeit oder Gesundheit.",
+    "source": "Warum Dopamin komplexer ist: NIH-Überblick"
   },
   "button": {
-    "start": "Entdecke deinen Dopamin-Typ",
-    "restart": "Nochmal versuchen",
-    "share_kakao": "KakaoTalk",
-    "share_twitter": "Twitter",
-    "share_facebook": "Facebook",
-    "share_copy": "Link kopieren"
+    "start": "Reflexion starten",
+    "restart": "Noch einmal reflektieren",
+    "share": "Neutralen Link teilen"
   },
   "analyzing": {
-    "title": "Analysiere dein Dopamin-Profil...",
-    "step1": "Scanne Belohnungsmuster...",
-    "step2": "Kartiere neuronale Bahnen...",
-    "step3": "Identifiziere Dopamin-Typ..."
+    "title": "Deine Auswahl wird gruppiert...",
+    "step1": "Festgelegte Gewichte addieren...",
+    "step2": "Sechs Summen vergleichen...",
+    "step3": "Reflexion vorbereiten..."
   },
   "result": {
-    "your_type": "Dein Dopamin-Typ",
-    "metrics_title": "Neurotransmitter-Profil",
-    "share": "Teile dein Ergebnis"
+    "your_type": "Dein Belohnungspräferenz-Muster",
+    "boundary_note": "Dieses Label ist ein selbst erstellter Reflexionsimpuls, kein Messwert, Gehirnprofil, keine Diagnose und kein Vergleich mit anderen.",
+    "next_title": "Mach aus der Reflexion eine kleine Handlung",
+    "primary_action": "Wähle eine Gewohnheit zum Wiederholen",
+    "guide_action": "Lies den Leitfaden zu Belohnungsmustern",
+    "share": "Reflexion teilen"
   },
-  "metric": {
-    "dopamine": "Dopamin",
-    "serotonin": "Serotonin",
-    "adrenaline": "Adrenalin",
-    "oxytocin": "Oxytocin",
-    "endorphin": "Endorphin"
+  "game": {
+    "back": "DopaBrain Startseite"
   },
-  "game": { "back": "DopaBrain Startseite" },
-  "share": { "text": "Mein Dopamin-Typ ist {type}! Was ist deiner?" },
+  "share": {
+    "text": "Probiere diese Reflexion mit acht Situationen zu Belohnungspräferenzen.",
+    "success": "Link kopiert.",
+    "unavailable": "Teilen ist auf diesem Gerät nicht verfügbar."
+  },
   "q": {
     "0": "Was gibt dir am Wochenende am meisten Energie?",
+    "1": "Wie gehst du eine neue Herausforderung an?",
+    "2": "Welche Art von Content fesselt dich?",
+    "3": "Dein idealer Urlaub?",
+    "4": "Was motiviert dich bei der Arbeit oder in der Schule?",
+    "5": "Wie gehst du mit Stress um?",
+    "6": "Wähle eine Superkraft:",
+    "7": "Was macht dich am glücklichsten?",
     "0a": "Extremsport oder Adrenalin-Aktivitäten",
     "0b": "Ein intensives Fokus-Projekt oder Lernsession",
     "0c": "Eine große Party mit Freunden",
     "0d": "Eine gemütliche Routine zu Hause",
-    "1": "Wie gehst du eine neue Herausforderung an?",
     "1a": "Setze kompetitive Ziele und gebe alles",
     "1b": "Erkunde alle Perspektiven, bevor du eintauchst",
     "1c": "Spring kopfüber rein, finde es unterwegs raus",
     "1d": "Plane sorgfältig und bleib auf der sicheren Seite",
-    "2": "Welche Art von Content fesselt dich?",
     "2a": "Virale Social-Media-Trends",
     "2b": "Tiefgründige Dokumentationen oder lange Artikel",
     "2c": "Wettkampfsport oder E-Sports",
     "2d": "Beruhigende ASMR oder Lo-Fi-Beats",
-    "3": "Dein idealer Urlaub?",
     "3a": "Fallschirmspringen, Bungee-Jumping, Extrem-Abenteuer",
     "3b": "Party-Stadt mit einer großen Gruppe von Freunden",
     "3c": "Friedliche Hütte in der Natur",
     "3d": "Ungeplantes Backpacking zu unbekannten Orten",
-    "4": "Was motiviert dich bei der Arbeit oder in der Schule?",
     "4a": "Ziele schlagen und Rankings erklimmen",
     "4b": "Eine Fähigkeit zur Perfektion meistern",
     "4c": "Team-Energie, Lob und Zusammenarbeit",
     "4d": "Eine stabile Routine und komfortable Umgebung",
-    "5": "Wie gehst du mit Stress um?",
     "5a": "Intensives Training oder körperliche Aktivität",
     "5b": "Mit Freunden oder Familie darüber reden",
     "5c": "Meditieren, journalen oder allein reflektieren",
     "5d": "Etwas völlig Neues und Anderes ausprobieren",
-    "6": "Wähle eine Superkraft:",
     "6a": "Supergeschwindigkeit — spüre den Rausch",
     "6b": "Zeit einfrieren — ultimativer Tieffokus",
     "6c": "Telepathie — mit allen verbinden",
     "6d": "Teleportation — überall sofort erkunden",
-    "7": "Was macht dich am glücklichsten?",
     "7a": "Einen Wettbewerb gewinnen oder ein Ziel erreichen",
     "7b": "Ein perfekter gemütlicher Abend mit Comfort Food",
     "7c": "Alle bei einer Feier zum Lachen bringen",
@@ -89,27 +95,27 @@
   "type": {
     "thrillSeeker": {
       "name": "Nervenkitzel-Jäger",
-      "desc": "Dein Gehirn sehnt sich nach Intensität und Adrenalin. Du wirst von extremen Erfahrungen, riskanten Situationen und dem Kick angezogen, Grenzen zu verschieben. Dein Dopamin schießt am stärksten hoch, wenn du am Limit lebst."
+      "desc": "Deine Auswahl lag am nächsten beim Muster Nervenkitzel-Jäger. Nutze es als Hinweis darauf, was dich bei der Sache hält; es ist keine Gehirn- oder Chemiemessung."
     },
     "deepDiver": {
       "name": "Tieftaucher",
-      "desc": "Dein Gehirn belohnt tiefe Konzentration und Meisterschaft. Du bekommst deine größten Dopamin-Kicks davon, dich in komplexen Problemen zu verlieren, neue Fähigkeiten zu lernen und Expertise zu erlangen. Qualität vor Quantität, immer."
+      "desc": "Deine Auswahl lag am nächsten beim Muster Tieftaucher. Nutze es als Hinweis darauf, was dich bei der Sache hält; es ist keine Gehirn- oder Chemiemessung."
     },
     "socialSpark": {
       "name": "Sozialer Funke",
-      "desc": "Dein Gehirn leuchtet durch menschliche Verbindungen auf. Soziale Interaktionen, andere zum Lachen bringen und Teil einer lebendigen Gruppe zu sein sind dein Dopamin-Treibstoff. Du wirst von der Energie anderer angetrieben."
+      "desc": "Deine Auswahl lag am nächsten beim Muster Sozialer Funke. Nutze es als Hinweis darauf, was dich bei der Sache hält; es ist keine Gehirn- oder Chemiemessung."
     },
     "comfortCreator": {
       "name": "Komfort-Schöpfer",
-      "desc": "Dein Gehirn findet Belohnung in Stabilität und Routine. Du bekommst stetiges Dopamin aus gemütlichen Umgebungen, vertrauten Ritualen und dem Schaffen einer sicheren, komfortablen Welt. Deine Ruhe ist deine Superkraft."
+      "desc": "Deine Auswahl lag am nächsten beim Muster Komfort-Schöpfer. Nutze es als Hinweis darauf, was dich bei der Sache hält; es ist keine Gehirn- oder Chemiemessung."
     },
     "challengeChaser": {
       "name": "Herausforderungs-Jäger",
-      "desc": "Dein Gehirn ist auf Wettbewerb und Erfolg programmiert. Rankings, Ziele und persönliche Bestleistungen fluten dein Dopamin-System. Du machst aus allem eine Herausforderung — und du liebst es zu gewinnen."
+      "desc": "Deine Auswahl lag am nächsten beim Muster Herausforderungs-Jäger. Nutze es als Hinweis darauf, was dich bei der Sache hält; es ist keine Gehirn- oder Chemiemessung."
     },
     "noveltyHunter": {
       "name": "Neuheiten-Jäger",
-      "desc": "Dein Gehirn ist süchtig nach dem Neuen und Unbekannten. Unerforschtes Terrain erkunden, versteckte Schätze entdecken und Dinge ausprobieren, die niemand sonst versucht hat, geben dir den ultimativen Dopamin-Rausch."
+      "desc": "Deine Auswahl lag am nächsten beim Muster Neuheiten-Jäger. Nutze es als Hinweis darauf, was dich bei der Sache hält; es ist keine Gehirn- oder Chemiemessung."
     }
   }
 }

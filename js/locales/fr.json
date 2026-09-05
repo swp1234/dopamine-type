@@ -1,86 +1,92 @@
 {
   "meta": {
-    "page_title": "Test de Type de Dopamine - Quel est le Style de Récompense de Votre Cerveau ? | DopaBrain",
-    "description": "Faites le test gratuit de type de dopamine pour découvrir votre système de récompense cérébral. 8 questions révèlent si vous êtes un Chercheur de Sensations, Plongeur Profond ou Étincelle Sociale. Résultats instantanés !",
-    "keywords": "test dopamine, quiz dopamine, type dopamine, système de récompense cérébral, test de personnalité neurosciences",
-    "og_title": "Test de Type de Dopamine - Quel est le Style de Récompense de Votre Cerveau ?",
-    "og_description": "Faites le test gratuit de type de dopamine pour découvrir votre système de récompense cérébral. 8 questions révèlent votre type de personnalité dopaminergique !",
-    "twitter_title": "Test de Type de Dopamine - Quel est le Style de Récompense de Votre Cerveau ?",
-    "twitter_description": "8 questions révèlent votre type de personnalité dopaminergique. Êtes-vous un Chercheur de Sensations ou un Plongeur Profond ?"
+    "page_title": "Réflexion sur les préférences de récompense | DopaBrain",
+    "description": "Huit choix du quotidien regroupent vos réponses dans un modèle de préférence créé par le site. Cette réflexion ne mesure ni dopamine ni chimie cérébrale.",
+    "keywords": "dopamine type quiz, reward preference reflection, motivation style questions",
+    "og_title": "Réflexion sur les préférences de récompense",
+    "og_description": "Huit choix du quotidien regroupent vos réponses dans un modèle de préférence créé par le site. Cette réflexion ne mesure ni dopamine ni chimie cérébrale.",
+    "twitter_title": "Réflexion sur les préférences de récompense",
+    "twitter_description": "Huit choix du quotidien regroupent vos réponses dans un modèle de préférence créé par le site. Cette réflexion ne mesure ni dopamine ni chimie cérébrale."
   },
-  "app": { "skipLink": "Aller au contenu principal" },
-  "loader": { "loading": "Chargement..." },
+  "app": {
+    "skipLink": "Aller au contenu principal"
+  },
+  "loader": {
+    "loading": "Chargement..."
+  },
   "start": {
-    "social_proof": "participants",
-    "title": "Quel est votre type de dopamine ?",
-    "subtitle": "Découvrez comment le système de récompense de votre cerveau façonne votre personnalité",
-    "questions_count": "8 questions"
+    "title": "Quel type de récompense vous aide à continuer ?",
+    "subtitle": "Huit choix du quotidien proposent un modèle de réflexion, pas votre taux de dopamine.",
+    "questions_count": "8 questions",
+    "feature_method": "Méthode : huit situations, quatre choix et six modèles créés pour cette réflexion.",
+    "method": "Chaque réponse ajoute 0 à 3 points aux modèles. Le total le plus élevé gagne ; les égalités suivent l’ordre de la liste.",
+    "boundary": "Cette réflexion ne mesure ni dopamine, ni neurotransmetteurs, ni personnalité, ni santé.",
+    "source": "Pourquoi la dopamine est plus complexe : aperçu du NIH"
   },
   "button": {
-    "start": "Découvrez votre type de dopamine",
-    "restart": "Réessayer",
-    "share_kakao": "KakaoTalk",
-    "share_twitter": "Twitter",
-    "share_facebook": "Facebook",
-    "share_copy": "Copier le lien"
+    "start": "Commencer la réflexion",
+    "restart": "Réfléchir à nouveau",
+    "share": "Partager un lien sans résultat"
   },
   "analyzing": {
-    "title": "Analyse de votre profil dopaminergique...",
-    "step1": "Scan des schémas de récompense...",
-    "step2": "Cartographie des voies neuronales...",
-    "step3": "Identification du type de dopamine..."
+    "title": "Regroupement de vos choix...",
+    "step1": "Addition des pondérations...",
+    "step2": "Comparaison des six totaux...",
+    "step3": "Préparation de votre réflexion..."
   },
   "result": {
-    "your_type": "Votre type de dopamine",
-    "metrics_title": "Profil de neurotransmetteurs",
-    "share": "Partagez votre résultat"
+    "your_type": "Votre modèle de préférence de récompense",
+    "boundary_note": "Cette étiquette est une piste de réflexion créée par le site, pas un score mesuré, un profil cérébral, un diagnostic ou une comparaison avec autrui.",
+    "next_title": "Transformez la réflexion en une petite action",
+    "primary_action": "Choisir une habitude à répéter",
+    "guide_action": "Lire le guide des modèles de récompense",
+    "share": "Partager la réflexion"
   },
-  "metric": {
-    "dopamine": "Dopamine",
-    "serotonin": "Sérotonine",
-    "adrenaline": "Adrénaline",
-    "oxytocin": "Ocytocine",
-    "endorphin": "Endorphine"
+  "game": {
+    "back": "Accueil DopaBrain"
   },
-  "game": { "back": "Accueil DopaBrain" },
-  "share": { "text": "Mon type de dopamine est {type} ! Et le vôtre ?" },
+  "share": {
+    "text": "Essayez cette réflexion en huit situations sur les préférences de récompense.",
+    "success": "Lien copié.",
+    "unavailable": "Le partage est indisponible sur cet appareil."
+  },
   "q": {
     "0": "Qu'est-ce qui vous dynamise le plus le week-end ?",
+    "1": "Comment abordez-vous un nouveau défi ?",
+    "2": "Quel type de contenu vous accroche ?",
+    "3": "Vos vacances idéales ?",
+    "4": "Qu'est-ce qui vous motive au travail ou à l'école ?",
+    "5": "Comment gérez-vous le stress ?",
+    "6": "Choisissez un super-pouvoir :",
+    "7": "Qu'est-ce qui vous rend le plus heureux ?",
     "0a": "Sports extrêmes ou activités à adrénaline",
     "0b": "Un projet de concentration profonde ou une session d'apprentissage",
     "0c": "Un grand rassemblement social avec des amis",
     "0d": "Une routine confortable à la maison",
-    "1": "Comment abordez-vous un nouveau défi ?",
     "1a": "Fixer des objectifs compétitifs et pousser fort",
     "1b": "Explorer tous les angles avant de plonger",
     "1c": "Se lancer tête baissée, comprendre en chemin",
     "1d": "Planifier soigneusement et rester en sécurité",
-    "2": "Quel type de contenu vous accroche ?",
     "2a": "Tendances virales sur les réseaux sociaux",
     "2b": "Documentaires approfondis ou longs articles",
     "2c": "Sports compétitifs ou esports",
     "2d": "ASMR apaisant ou beats lo-fi",
-    "3": "Vos vacances idéales ?",
     "3a": "Parachutisme, saut à l'élastique, aventure extrême",
     "3b": "Ville festive avec un grand groupe d'amis",
     "3c": "Retraite paisible dans un chalet en pleine nature",
     "3d": "Backpacking improvisé vers des endroits inconnus",
-    "4": "Qu'est-ce qui vous motive au travail ou à l'école ?",
     "4a": "Battre des objectifs et grimper dans les classements",
     "4b": "Maîtriser une compétence à la perfection",
     "4c": "L'énergie d'équipe, les éloges et la collaboration",
     "4d": "Une routine stable et un environnement confortable",
-    "5": "Comment gérez-vous le stress ?",
     "5a": "Entraînement intense ou activité physique",
     "5b": "En parler avec des amis ou de la famille",
     "5c": "Méditer, écrire un journal ou réfléchir seul",
     "5d": "Essayer quelque chose de complètement nouveau et différent",
-    "6": "Choisissez un super-pouvoir :",
     "6a": "Super vitesse — ressentir la montée d'adrénaline",
     "6b": "Figer le temps — concentration profonde ultime",
     "6c": "Télépathie — se connecter avec tout le monde",
     "6d": "Téléportation — explorer partout instantanément",
-    "7": "Qu'est-ce qui vous rend le plus heureux ?",
     "7a": "Gagner une compétition ou atteindre un objectif",
     "7b": "Une soirée cocooning parfaite avec de la comfort food",
     "7c": "Faire rire tout le monde lors d'un rassemblement",
@@ -89,27 +95,27 @@
   "type": {
     "thrillSeeker": {
       "name": "Chercheur de Sensations",
-      "desc": "Votre cerveau aspire à l'intensité et à l'adrénaline. Vous êtes attiré par les expériences extrêmes, les situations à enjeux élevés et la montée que procure le fait de repousser les limites. Votre dopamine atteint son pic lorsque vous vivez sur le fil du rasoir."
+      "desc": "Vos choix se rapprochent du modèle Chercheur de Sensations. Utilisez-le pour observer ce qui entretient votre engagement ; ce n’est pas une mesure cérébrale ou chimique."
     },
     "deepDiver": {
       "name": "Plongeur Profond",
-      "desc": "Votre cerveau récompense la concentration profonde et la maîtrise. Vous obtenez vos plus grandes poussées de dopamine en vous perdant dans des problèmes complexes, en apprenant de nouvelles compétences et en atteignant l'expertise. Qualité plutôt que quantité, toujours."
+      "desc": "Vos choix se rapprochent du modèle Plongeur Profond. Utilisez-le pour observer ce qui entretient votre engagement ; ce n’est pas une mesure cérébrale ou chimique."
     },
     "socialSpark": {
       "name": "Étincelle Sociale",
-      "desc": "Votre cerveau s'illumine grâce aux connexions humaines. Les interactions sociales, faire rire les autres et faire partie d'un groupe dynamique sont votre carburant dopaminergique. Vous êtes dynamisé par l'énergie des autres."
+      "desc": "Vos choix se rapprochent du modèle Étincelle Sociale. Utilisez-le pour observer ce qui entretient votre engagement ; ce n’est pas une mesure cérébrale ou chimique."
     },
     "comfortCreator": {
       "name": "Créateur de Confort",
-      "desc": "Votre cerveau trouve sa récompense dans la stabilité et la routine. Vous obtenez de la dopamine régulière grâce aux environnements douillets, aux rituels familiers et à la création d'un monde sûr et confortable. Votre calme est votre super-pouvoir."
+      "desc": "Vos choix se rapprochent du modèle Créateur de Confort. Utilisez-le pour observer ce qui entretient votre engagement ; ce n’est pas une mesure cérébrale ou chimique."
     },
     "challengeChaser": {
       "name": "Chasseur de Défis",
-      "desc": "Votre cerveau est câblé pour la compétition et la réussite. Les classements, les objectifs et battre vos records personnels inondent votre système dopaminergique. Vous transformez tout en défi — et vous adorez gagner."
+      "desc": "Vos choix se rapprochent du modèle Chasseur de Défis. Utilisez-le pour observer ce qui entretient votre engagement ; ce n’est pas une mesure cérébrale ou chimique."
     },
     "noveltyHunter": {
       "name": "Chasseur de Nouveauté",
-      "desc": "Votre cerveau est accro au nouveau et à l'inconnu. Explorer des territoires inexplorés, découvrir des trésors cachés et essayer des choses que personne d'autre n'a essayées vous procurent la montée de dopamine ultime."
+      "desc": "Vos choix se rapprochent du modèle Chasseur de Nouveauté. Utilisez-le pour observer ce qui entretient votre engagement ; ce n’est pas une mesure cérébrale ou chimique."
     }
   }
 }

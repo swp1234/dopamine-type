@@ -1,86 +1,92 @@
 {
   "meta": {
-    "page_title": "Tes Tipe Dopamin - Apa Gaya Reward Otakmu? | DopaBrain",
-    "description": "Ikuti tes tipe dopamin gratis untuk menemukan sistem reward otakmu. 8 pertanyaan mengungkap apakah kamu Thrill Seeker, Deep Diver, atau Social Spark. Hasil instan!",
-    "keywords": "tes dopamin, kuis dopamin, tipe dopamin, sistem reward otak, tes kepribadian neurosains",
-    "og_title": "Tes Tipe Dopamin - Apa Gaya Reward Otakmu?",
-    "og_description": "Ikuti tes tipe dopamin gratis untuk menemukan sistem reward otakmu. 8 pertanyaan mengungkap kepribadian dopaminmu!",
-    "twitter_title": "Tes Tipe Dopamin - Apa Gaya Reward Otakmu?",
-    "twitter_description": "8 pertanyaan mengungkap tipe kepribadian dopaminmu. Apakah kamu Thrill Seeker atau Deep Diver?"
+    "page_title": "Refleksi Preferensi Hadiah | DopaBrain",
+    "description": "Delapan pilihan sehari-hari mengelompokkan jawaban ke pola preferensi hadiah buatan situs. Refleksi ini tidak mengukur dopamin atau kimia otak.",
+    "keywords": "dopamine type quiz, reward preference reflection, motivation style questions",
+    "og_title": "Refleksi Preferensi Hadiah",
+    "og_description": "Delapan pilihan sehari-hari mengelompokkan jawaban ke pola preferensi hadiah buatan situs. Refleksi ini tidak mengukur dopamin atau kimia otak.",
+    "twitter_title": "Refleksi Preferensi Hadiah",
+    "twitter_description": "Delapan pilihan sehari-hari mengelompokkan jawaban ke pola preferensi hadiah buatan situs. Refleksi ini tidak mengukur dopamin atau kimia otak."
   },
-  "app": { "skipLink": "Langsung ke konten utama" },
-  "loader": { "loading": "Memuat..." },
+  "app": {
+    "skipLink": "Langsung ke konten utama"
+  },
+  "loader": {
+    "loading": "Memuat..."
+  },
   "start": {
-    "social_proof": "peserta",
-    "title": "Apa Tipe Dopaminmu?",
-    "subtitle": "Temukan bagaimana sistem reward otakmu membentuk kepribadianmu",
-    "questions_count": "8 pertanyaan"
+    "title": "Hadiah seperti apa yang membuatmu terus terlibat?",
+    "subtitle": "Delapan pilihan sehari-hari menunjukkan pola refleksi, bukan kadar dopaminmu.",
+    "questions_count": "8 pertanyaan",
+    "feature_method": "Metode: delapan situasi, empat pilihan, dan enam pola buatan.",
+    "method": "Setiap jawaban menambah 0–3 poin ke tiap pola. Jumlah tertinggi dipilih; seri mengikuti urutan daftar.",
+    "boundary": "Refleksi ini tidak mengukur dopamin, neurotransmiter, kepribadian, atau kesehatan.",
+    "source": "Mengapa dopamin lebih rumit: ringkasan NIH"
   },
   "button": {
-    "start": "Temukan Tipe Dopaminmu",
-    "restart": "Coba Lagi",
-    "share_kakao": "KakaoTalk",
-    "share_twitter": "Twitter",
-    "share_facebook": "Facebook",
-    "share_copy": "Salin Link"
+    "start": "Mulai refleksi",
+    "restart": "Refleksi lagi",
+    "share": "Bagikan tautan netral"
   },
   "analyzing": {
-    "title": "Menganalisis profil dopaminmu...",
-    "step1": "Memindai pola reward...",
-    "step2": "Memetakan jalur saraf...",
-    "step3": "Mengidentifikasi tipe dopamin..."
+    "title": "Mengelompokkan pilihanmu...",
+    "step1": "Menambahkan bobot buatan...",
+    "step2": "Membandingkan enam jumlah...",
+    "step3": "Menyiapkan refleksimu..."
   },
   "result": {
-    "your_type": "Tipe Dopaminmu",
-    "metrics_title": "Profil Neurotransmitter",
-    "share": "Bagikan Hasilmu"
+    "your_type": "Pola preferensi hadiahmu",
+    "boundary_note": "Label ini adalah petunjuk refleksi buatan, bukan skor terukur, profil otak, diagnosis, atau perbandingan dengan orang lain.",
+    "next_title": "Ubah refleksi menjadi satu tindakan kecil",
+    "primary_action": "Pilih satu kebiasaan untuk diulang",
+    "guide_action": "Baca panduan pola hadiah",
+    "share": "Bagikan refleksi"
   },
-  "metric": {
-    "dopamine": "Dopamin",
-    "serotonin": "Serotonin",
-    "adrenaline": "Adrenalin",
-    "oxytocin": "Oksitosin",
-    "endorphin": "Endorfin"
+  "game": {
+    "back": "Beranda DopaBrain"
   },
-  "game": { "back": "Beranda DopaBrain" },
-  "share": { "text": "Tipe dopaminku adalah {type}! Kalau kamu?" },
+  "share": {
+    "text": "Coba refleksi preferensi hadiah dengan delapan situasi ini.",
+    "success": "Tautan disalin.",
+    "unavailable": "Berbagi tidak tersedia di perangkat ini."
+  },
   "q": {
     "0": "Apa yang paling membuatmu berenergi di akhir pekan?",
+    "1": "Bagaimana kamu menghadapi tantangan baru?",
+    "2": "Konten seperti apa yang menarik perhatianmu?",
+    "3": "Liburan idealmu?",
+    "4": "Apa yang memotivasimu di tempat kerja atau sekolah?",
+    "5": "Bagaimana kamu mengatasi stres?",
+    "6": "Pilih kekuatan super:",
+    "7": "Apa yang membuatmu paling bahagia?",
     "0a": "Olahraga ekstrem atau aktivitas penuh adrenalin",
     "0b": "Proyek fokus mendalam atau sesi belajar",
     "0c": "Pesta besar dengan teman-teman",
     "0d": "Rutinitas nyaman di rumah",
-    "1": "Bagaimana kamu menghadapi tantangan baru?",
     "1a": "Menetapkan target kompetitif dan berusaha keras",
     "1b": "Menjelajahi semua sudut sebelum terjun",
     "1c": "Langsung terjun, cari tahu nanti",
     "1d": "Merencanakan dengan hati-hati dan pilih yang aman",
-    "2": "Konten seperti apa yang menarik perhatianmu?",
     "2a": "Tren viral di media sosial",
     "2b": "Dokumenter mendalam atau bacaan panjang",
     "2c": "Olahraga kompetitif atau esports",
     "2d": "ASMR menenangkan atau lo-fi beats",
-    "3": "Liburan idealmu?",
     "3a": "Skydiving, bungee jumping, petualangan ekstrem",
     "3b": "Kota pesta dengan sekelompok besar teman",
     "3c": "Kabin damai di tengah alam",
     "3d": "Backpacking tanpa rencana ke tempat yang tidak dikenal",
-    "4": "Apa yang memotivasimu di tempat kerja atau sekolah?",
     "4a": "Mengalahkan target dan naik peringkat",
     "4b": "Menguasai keterampilan hingga sempurna",
     "4c": "Energi tim, pujian, dan kolaborasi",
     "4d": "Rutinitas stabil dan lingkungan nyaman",
-    "5": "Bagaimana kamu mengatasi stres?",
     "5a": "Olahraga intens atau aktivitas fisik",
     "5b": "Berbicara dengan teman atau keluarga",
     "5c": "Meditasi, menulis jurnal, atau refleksi sendiri",
     "5d": "Mencoba sesuatu yang benar-benar baru dan berbeda",
-    "6": "Pilih kekuatan super:",
     "6a": "Kecepatan super — rasakan sensasinya",
     "6b": "Bekukan waktu — fokus mendalam ultimate",
     "6c": "Telepati — terhubung dengan semua orang",
     "6d": "Teleportasi — jelajahi semua tempat secara instan",
-    "7": "Apa yang membuatmu paling bahagia?",
     "7a": "Memenangkan kompetisi atau mencapai tujuan",
     "7b": "Malam yang sempurna dengan makanan favorit",
     "7c": "Membuat semua orang tertawa di suatu acara",
@@ -89,27 +95,27 @@
   "type": {
     "thrillSeeker": {
       "name": "Thrill Seeker",
-      "desc": "Otakmu mendambakan intensitas dan adrenalin. Kamu tertarik pada pengalaman ekstrem, situasi berisiko tinggi, dan sensasi melampaui batas. Dopaminmu melonjak paling tinggi saat kamu hidup di ujung tanduk."
+      "desc": "Pilihanmu paling dekat dengan pola Thrill Seeker. Gunakan sebagai petunjuk untuk melihat apa yang membuatmu tetap terlibat; ini bukan pengukuran otak atau kimia."
     },
     "deepDiver": {
       "name": "Deep Diver",
-      "desc": "Otakmu memberi reward pada fokus mendalam dan penguasaan. Kamu mendapat lonjakan dopamin terbesar dari tenggelam dalam masalah kompleks, mempelajari keterampilan baru, dan mencapai keahlian. Selalu kualitas daripada kuantitas."
+      "desc": "Pilihanmu paling dekat dengan pola Deep Diver. Gunakan sebagai petunjuk untuk melihat apa yang membuatmu tetap terlibat; ini bukan pengukuran otak atau kimia."
     },
     "socialSpark": {
       "name": "Social Spark",
-      "desc": "Otakmu bersinar melalui koneksi manusia. Interaksi sosial, membuat orang lain tertawa, dan menjadi bagian dari kelompok yang hidup adalah bahan bakar dopaminmu. Kamu berenergi dari energi orang lain."
+      "desc": "Pilihanmu paling dekat dengan pola Social Spark. Gunakan sebagai petunjuk untuk melihat apa yang membuatmu tetap terlibat; ini bukan pengukuran otak atau kimia."
     },
     "comfortCreator": {
       "name": "Comfort Creator",
-      "desc": "Otakmu menemukan reward dalam stabilitas dan rutinitas. Kamu mendapat dopamin stabil dari lingkungan nyaman, ritual yang familiar, dan menciptakan dunia yang aman dan nyaman. Kedamaianmu adalah kekuatan supermu."
+      "desc": "Pilihanmu paling dekat dengan pola Comfort Creator. Gunakan sebagai petunjuk untuk melihat apa yang membuatmu tetap terlibat; ini bukan pengukuran otak atau kimia."
     },
     "challengeChaser": {
       "name": "Challenge Chaser",
-      "desc": "Otakmu dirancang untuk kompetisi dan pencapaian. Peringkat, target, dan mengalahkan rekor pribadi membanjiri sistem dopaminmu. Kamu mengubah segalanya menjadi tantangan — dan kamu suka menang."
+      "desc": "Pilihanmu paling dekat dengan pola Challenge Chaser. Gunakan sebagai petunjuk untuk melihat apa yang membuatmu tetap terlibat; ini bukan pengukuran otak atau kimia."
     },
     "noveltyHunter": {
       "name": "Novelty Hunter",
-      "desc": "Otakmu kecanduan hal-hal baru dan tidak dikenal. Menjelajahi wilayah yang belum dipetakan, menemukan permata tersembunyi, dan mencoba hal yang belum pernah dicoba orang lain memberimu lonjakan dopamin ultimate."
+      "desc": "Pilihanmu paling dekat dengan pola Novelty Hunter. Gunakan sebagai petunjuk untuk melihat apa yang membuatmu tetap terlibat; ini bukan pengukuran otak atau kimia."
     }
   }
 }

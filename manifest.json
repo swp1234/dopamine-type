@@ -1,8 +1,9 @@
 {
-    "name": "Dopamine Type Test - DopaBrain",
-    "short_name": "Dopamine Type",
-    "description": "Discover your brain's reward style with the dopamine type test",
+    "name": "Reward Preference Reflection - DopaBrain",
+    "short_name": "Reward Reflection",
+    "description": "An eight-scenario reflection with an authored scoring rule; not a dopamine or brain-chemistry measurement",
     "start_url": "/dopamine-type/",
+    "scope": "/dopamine-type/",
     "display": "standalone",
     "background_color": "#0a0a1a",
     "theme_color": "#f59e0b",

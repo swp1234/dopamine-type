@@ -1,86 +1,92 @@
 {
   "meta": {
-    "page_title": "Dopamin Tipi Testi - Beyninin Ödül Tarzı Nedir? | DopaBrain",
-    "description": "Beyninin ödül sistemini keşfetmek için ücretsiz dopamin tipi testini çöz. 8 soru senin Thrill Seeker, Deep Diver veya Social Spark olup olmadığını ortaya çıkarır. Anında sonuç!",
-    "keywords": "dopamin testi, dopamin quiz, dopamin tipi, beyin ödül sistemi, nörobilim kişilik testi",
-    "og_title": "Dopamin Tipi Testi - Beyninin Ödül Tarzı Nedir?",
-    "og_description": "Beyninin ödül sistemini keşfetmek için ücretsiz dopamin tipi testini çöz. 8 soru dopamin kişiliğini ortaya çıkarır!",
-    "twitter_title": "Dopamin Tipi Testi - Beyninin Ödül Tarzı Nedir?",
-    "twitter_description": "8 soru dopamin kişilik tipini ortaya çıkarır. Sen Thrill Seeker mısın yoksa Deep Diver mı?"
+    "page_title": "Ödül Tercihi Yansıtması | DopaBrain",
+    "description": "Sekiz günlük seçim, yanıtlarını site tarafından yazılmış bir ödül tercihi örüntüsünde gruplar. Dopamin veya beyin kimyasını ölçmez.",
+    "keywords": "dopamine type quiz, reward preference reflection, motivation style questions",
+    "og_title": "Ödül Tercihi Yansıtması",
+    "og_description": "Sekiz günlük seçim, yanıtlarını site tarafından yazılmış bir ödül tercihi örüntüsünde gruplar. Dopamin veya beyin kimyasını ölçmez.",
+    "twitter_title": "Ödül Tercihi Yansıtması",
+    "twitter_description": "Sekiz günlük seçim, yanıtlarını site tarafından yazılmış bir ödül tercihi örüntüsünde gruplar. Dopamin veya beyin kimyasını ölçmez."
   },
-  "app": { "skipLink": "Ana içeriğe geç" },
-  "loader": { "loading": "Yükleniyor..." },
+  "app": {
+    "skipLink": "Ana içeriğe geç"
+  },
+  "loader": {
+    "loading": "Yükleniyor..."
+  },
   "start": {
-    "social_proof": "katılımcı",
-    "title": "Dopamin Tipin Nedir?",
-    "subtitle": "Beyninin ödül sisteminin kişiliğini nasıl şekillendirdiğini keşfet",
-    "questions_count": "8 soru"
+    "title": "Hangi ödül seni devam etmeye teşvik eder?",
+    "subtitle": "Sekiz günlük seçim bir tercih örüntüsü sunar; dopamin düzeyini ölçmez.",
+    "questions_count": "8 soru",
+    "feature_method": "Yöntem: sekiz durum, dörder seçenek ve altı yazılmış örüntü.",
+    "method": "Her yanıt örüntülere 0–3 puan ekler. En yüksek toplam seçilir; eşitlikte liste sırası kullanılır.",
+    "boundary": "Bu yansıtma dopamin, nörotransmiter, kişilik veya sağlık ölçmez.",
+    "source": "Dopamin neden daha karmaşık: NIH özeti"
   },
   "button": {
-    "start": "Dopamin Tipini Keşfet",
-    "restart": "Tekrar Dene",
-    "share_kakao": "KakaoTalk",
-    "share_twitter": "Twitter",
-    "share_facebook": "Facebook",
-    "share_copy": "Linki Kopyala"
+    "start": "Yansıtmayı başlat",
+    "restart": "Tekrar düşün",
+    "share": "Sonuçsuz bağlantıyı paylaş"
   },
   "analyzing": {
-    "title": "Dopamin profilin analiz ediliyor...",
-    "step1": "Ödül kalıpları taranıyor...",
-    "step2": "Sinir yolları haritalanıyor...",
-    "step3": "Dopamin tipi belirleniyor..."
+    "title": "Seçimlerin gruplanıyor...",
+    "step1": "Yazılmış ağırlıklar ekleniyor...",
+    "step2": "Altı toplam karşılaştırılıyor...",
+    "step3": "Yansıtman hazırlanıyor..."
   },
   "result": {
-    "your_type": "Dopamin Tipin",
-    "metrics_title": "Nörotransmitter Profili",
-    "share": "Sonucunu Paylaş"
+    "your_type": "Ödül tercihi örüntün",
+    "boundary_note": "Bu etiket yazılmış bir düşünme ipucudur; ölçülmüş puan, beyin profili, tanı veya başkalarıyla karşılaştırma değildir.",
+    "next_title": "Yansıtmayı küçük bir eyleme dönüştür",
+    "primary_action": "Tekrarlanacak bir alışkanlık seç",
+    "guide_action": "Ödül örüntüsü rehberini oku",
+    "share": "Yansıtmayı paylaş"
   },
-  "metric": {
-    "dopamine": "Dopamin",
-    "serotonin": "Serotonin",
-    "adrenaline": "Adrenalin",
-    "oxytocin": "Oksitosin",
-    "endorphin": "Endorfin"
+  "game": {
+    "back": "DopaBrain Ana Sayfa"
   },
-  "game": { "back": "DopaBrain Ana Sayfa" },
-  "share": { "text": "Benim dopamin tipim {type}! Senin ki ne?" },
+  "share": {
+    "text": "Bu sekiz durumlu ödül tercihi yansıtmasını dene.",
+    "success": "Bağlantı kopyalandı.",
+    "unavailable": "Bu cihazda paylaşım kullanılamıyor."
+  },
   "q": {
     "0": "Hafta sonu seni en çok ne enerjilendiriyor?",
+    "1": "Yeni bir zorluğa nasıl yaklaşıyorsun?",
+    "2": "Seni ne tür içerikler yakalıyor?",
+    "3": "İdeal tatilin?",
+    "4": "İşte veya okulda seni ne motive ediyor?",
+    "5": "Stresle nasıl başa çıkıyorsun?",
+    "6": "Bir süper güç seç:",
+    "7": "Seni en mutlu eden şey ne?",
     "0a": "Ekstrem sporlar veya adrenalin dolu aktiviteler",
     "0b": "Derin odaklanma projesi veya öğrenme seansı",
     "0c": "Arkadaşlarla büyük bir sosyal toplantı",
     "0d": "Evde rahat bir rutin",
-    "1": "Yeni bir zorluğa nasıl yaklaşıyorsun?",
     "1a": "Rekabetçi hedefler koyup sıkı çalışıyorum",
     "1b": "Dalmadan önce tüm açıları keşfediyorum",
     "1c": "Hemen atlıyorum, sonra hallederim",
     "1d": "Dikkatli plan yapıp güvenli olana bağlı kalıyorum",
-    "2": "Seni ne tür içerikler yakalıyor?",
     "2a": "Viral sosyal medya trendleri",
     "2b": "Derin belgeseller veya uzun okumalar",
     "2c": "Rekabetçi sporlar veya e-sporlar",
     "2d": "Sakinleştirici ASMR veya lo-fi ritimler",
-    "3": "İdeal tatilin?",
     "3a": "Paraşütle atlama, bungee jumping, ekstrem macera",
     "3b": "Büyük bir arkadaş grubuyla parti şehri",
     "3c": "Doğada huzurlu bir kabin",
     "3d": "Bilinmeyen yerlere plansız sırt çantasıyla seyahat",
-    "4": "İşte veya okulda seni ne motive ediyor?",
     "4a": "Hedefleri aşmak ve sıralamalarda yükselmek",
     "4b": "Bir beceriyi mükemmelliğe ulaştırmak",
     "4c": "Takım enerjisi, övgü ve işbirliği",
     "4d": "Stabil bir rutin ve rahat ortam",
-    "5": "Stresle nasıl başa çıkıyorsun?",
     "5a": "Yoğun egzersiz veya fiziksel aktivite",
     "5b": "Arkadaşlar veya aileyle konuşarak",
     "5c": "Meditasyon, günlük tutma veya yalnız düşünme",
     "5d": "Tamamen yeni ve farklı bir şey deneyerek",
-    "6": "Bir süper güç seç:",
     "6a": "Süper hız — heyecanı hisset",
     "6b": "Zamanı dondurma — nihai derin odaklanma",
     "6c": "Telepati — herkesle bağlantı kur",
     "6d": "Işınlanma — her yeri anında keşfet",
-    "7": "Seni en mutlu eden şey ne?",
     "7a": "Bir yarışmayı kazanmak veya bir hedefe ulaşmak",
     "7b": "Rahat yiyeceklerle mükemmel rahat bir akşam",
     "7c": "Bir toplantıda herkesi güldürmek",
@@ -89,27 +95,27 @@
   "type": {
     "thrillSeeker": {
       "name": "Thrill Seeker",
-      "desc": "Beynin yoğunluk ve adrenalini arzuluyor. Ekstrem deneyimlere, yüksek riskli durumlara ve sınırları zorlama heyecanına çekiliyorsun. Dopaminin sınırda yaşarken en çok yükseliyor."
+      "desc": "Seçimlerin Thrill Seeker örüntüsüne yakındı. Seni neyin ilgili tuttuğunu fark etmek için kullan; bu bir beyin veya kimya ölçümü değildir."
     },
     "deepDiver": {
       "name": "Deep Diver",
-      "desc": "Beynin derin odaklanmayı ve ustalığı ödüllendiriyor. En büyük dopamin patlamalarını karmaşık problemlerde kaybolmaktan, yeni beceriler öğrenmekten ve uzmanlığa ulaşmaktan alıyorsun. Her zaman nicelikten çok nitelik."
+      "desc": "Seçimlerin Deep Diver örüntüsüne yakındı. Seni neyin ilgili tuttuğunu fark etmek için kullan; bu bir beyin veya kimya ölçümü değildir."
     },
     "socialSpark": {
       "name": "Social Spark",
-      "desc": "Beynin insan bağlantısıyla parlıyor. Sosyal etkileşimler, başkalarını güldürmek ve canlı bir grubun parçası olmak dopamin yakıtın. Başkalarının enerjisiyle enerjin yükleniyor."
+      "desc": "Seçimlerin Social Spark örüntüsüne yakındı. Seni neyin ilgili tuttuğunu fark etmek için kullan; bu bir beyin veya kimya ölçümü değildir."
     },
     "comfortCreator": {
       "name": "Comfort Creator",
-      "desc": "Beynin istikrar ve rutinde ödül buluyor. Rahat ortamlardan, tanıdık ritüellerden ve güvenli, rahat bir dünya yaratmaktan sürekli dopamin alıyorsun. Sakinliğin süper gücün."
+      "desc": "Seçimlerin Comfort Creator örüntüsüne yakındı. Seni neyin ilgili tuttuğunu fark etmek için kullan; bu bir beyin veya kimya ölçümü değildir."
     },
     "challengeChaser": {
       "name": "Challenge Chaser",
-      "desc": "Beynin rekabet ve başarı için tasarlanmış. Sıralamalar, hedefler ve kişisel en iyileri geçmek dopamin sistemini dolduruyor. Her şeyi bir meydan okumaya dönüştürüyorsun — ve kazanmayı seviyorsun."
+      "desc": "Seçimlerin Challenge Chaser örüntüsüne yakındı. Seni neyin ilgili tuttuğunu fark etmek için kullan; bu bir beyin veya kimya ölçümü değildir."
     },
     "noveltyHunter": {
       "name": "Novelty Hunter",
-      "desc": "Beynin yeni ve bilinmeyene bağımlı. Keşfedilmemiş bölgeleri araştırmak, gizli mücevherleri bulmak ve kimsenin denemediği şeyleri denemek sana nihai dopamin patlaması veriyor."
+      "desc": "Seçimlerin Novelty Hunter örüntüsüne yakındı. Seni neyin ilgili tuttuğunu fark etmek için kullan; bu bir beyin veya kimya ölçümü değildir."
     }
   }
 }

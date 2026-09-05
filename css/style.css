@@ -1,4 +1,4 @@
-/* === Dopamine Type Test - Dark Mode First === */
+/* === Reward Preference Reflection - Dark Mode First === */
 :root {
     --primary: #f59e0b;
     --primary-light: #fbbf24;
@@ -30,15 +30,14 @@
 [data-theme="light"] .option-btn { background: rgba(0, 0, 0, 0.03); border-color: rgba(0, 0, 0, 0.1); color: var(--text); }
 [data-theme="light"] .option-btn:hover { background: rgba(245, 158, 11, 0.06); border-color: rgba(245, 158, 11, 0.3); }
 [data-theme="light"] .option-btn.selected { background: rgba(245, 158, 11, 0.1); border-color: var(--primary); }
-[data-theme="light"] .metrics-section { background: rgba(0, 0, 0, 0.02); border-color: rgba(0, 0, 0, 0.08); }
-[data-theme="light"] .metric-bar-bg { background: rgba(0, 0, 0, 0.06); }
+[data-theme="light"] .trust-panel,
+[data-theme="light"] .result-boundary,
+[data-theme="light"] .related-tests { background: rgba(0, 0, 0, 0.02); border-color: rgba(0, 0, 0, 0.08); }
 [data-theme="light"] .share-section { background: rgba(0, 0, 0, 0.02); border-color: rgba(0, 0, 0, 0.08); }
 [data-theme="light"] .share-btn { background: rgba(0, 0, 0, 0.03); border-color: rgba(0, 0, 0, 0.1); }
 [data-theme="light"] .lang-menu { background: rgba(248, 249, 252, 0.98); border-color: rgba(0, 0, 0, 0.1); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12); }
 [data-theme="light"] .lang-option:hover { background: rgba(245, 158, 11, 0.06); }
-[data-theme="light"] .social-proof { background: rgba(0, 0, 0, 0.03); border-color: rgba(0, 0, 0, 0.08); }
 [data-theme="light"] .time-badge { background: rgba(0, 0, 0, 0.03); border-color: rgba(0, 0, 0, 0.08); }
-[data-theme="light"] .ad-container { background: rgba(0, 0, 0, 0.02); }
 [data-theme="light"] .analyze-step { background: rgba(0, 0, 0, 0.02); border-color: rgba(0, 0, 0, 0.08); }
 [data-theme="light"] .result-description { color: var(--text-muted); }
 [data-theme="light"] .brain-half { stroke: var(--primary-dark) !important; }
@@ -218,15 +217,6 @@ body {
 .lang-option:hover { background: rgba(245, 158, 11, 0.1); }
 .lang-option.active { background: rgba(245, 158, 11, 0.15); font-weight: 600; }
 
-/* === Ad Container === */
-.ad-container {
-    margin: 12px 0;
-    min-height: 50px;
-    background: rgba(255, 255, 255, 0.02);
-    border-radius: 8px;
-    overflow: hidden;
-}
-
 /* === Screens === */
 .screen {
     display: none;
@@ -324,28 +314,6 @@ body {
 }
 
 /* Social proof */
-.social-proof {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 20px;
-    background: var(--glass-bg);
-    border: 1px solid var(--glass-border);
-    border-radius: 20px;
-    margin-bottom: 20px;
-}
-
-.proof-count {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--primary);
-}
-
-.proof-text {
-    font-size: 13px;
-    color: var(--text-muted);
-}
-
 /* Start title */
 .start-title {
     font-size: 28px;
@@ -385,6 +353,22 @@ body {
     background: var(--primary);
     border-radius: 50%;
 }
+
+.trust-panel,
+.result-boundary {
+    margin: 20px 0;
+    padding: 16px;
+    border: 1px solid var(--glass-border);
+    border-radius: 14px;
+    background: var(--glass-bg);
+    color: var(--text-muted);
+    font-size: 13px;
+    line-height: 1.65;
+    text-align: left;
+}
+
+.trust-panel p + p { margin-top: 8px; }
+.trust-panel a { color: var(--primary-light); }
 
 /* Buttons */
 .btn {
@@ -701,67 +685,33 @@ body {
     margin: 0 auto;
 }
 
-/* Metrics Section */
-.metrics-section {
+/* Focused next actions */
+.related-tests {
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
     border-radius: 16px;
     padding: 20px;
     margin-bottom: 20px;
-    backdrop-filter: var(--glass-blur);
-    -webkit-backdrop-filter: var(--glass-blur);
 }
 
-.metrics-section h3 {
-    font-size: 15px;
-    font-weight: 700;
-    margin-bottom: 16px;
-    color: var(--text);
-}
-
-.metrics-bars {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.metric-row {
+.related-tests h3 { font-size: 15px; font-weight: 700; margin-bottom: 12px; }
+.related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.related-card {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
+    min-height: 52px;
+    padding: 12px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--text);
+    transition: all 0.2s;
 }
-
-.metric-label {
-    font-size: 13px;
-    color: var(--text-muted);
-    width: 80px;
-    flex-shrink: 0;
-}
-
-.metric-bar-bg {
-    flex: 1;
-    height: 8px;
-    background: rgba(255, 255, 255, 0.06);
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.metric-bar-fill {
-    height: 100%;
-    background: linear-gradient(90deg, var(--primary), var(--primary-light));
-    border-radius: 4px;
-    transition: width 1s ease;
-    width: 0%;
-}
-
-.metric-value {
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--primary);
-    width: 36px;
-    text-align: right;
-    flex-shrink: 0;
-}
+.related-card:hover { transform: translateY(-2px); border-color: var(--card-color); }
+.related-emoji { font-size: 20px; }
+.related-name { font-size: 13px; font-weight: 600; }
 
 /* Share Section */
 .share-section {
@@ -781,7 +731,7 @@ body {
 
 .share-buttons {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 10px;
 }
 
@@ -807,6 +757,13 @@ body {
 .share-btn.facebook:hover { background: rgba(24, 119, 242, 0.1); }
 .share-btn.copy { border-color: rgba(245, 158, 11, 0.3); }
 .share-btn.copy:hover { background: rgba(245, 158, 11, 0.1); }
+
+.share-status {
+    min-height: 1.5em;
+    margin-top: 8px;
+    color: var(--text-muted);
+    font-size: 13px;
+}
 
 /* === Footer === */
 .game-footer {

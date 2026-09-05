@@ -68,6 +68,6 @@
     </g>
   </g>
   <!-- Text -->
-  <text x="256" y="410" text-anchor="middle" font-family="system-ui,sans-serif" font-size="38" font-weight="700" fill="#f59e0b" letter-spacing="8">DOPAMINE</text>
+  <text x="256" y="410" text-anchor="middle" font-family="system-ui,sans-serif" font-size="38" font-weight="700" fill="#f59e0b" letter-spacing="8">REWARD</text>
   <text x="256" y="445" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" font-weight="400" fill="#f59e0b" opacity="0.6" letter-spacing="2">TYPE TEST</text>
 </svg>
