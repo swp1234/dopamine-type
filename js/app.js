@@ -130,6 +130,7 @@ class DopamineTypeApp {
         this.syncLocalizedActions();
         this.initTheme();
         this.hideLoader();
+        document.body.dataset.rewardAppReady = 'true';
     }
 
     t(key) {
