@@ -110,6 +110,10 @@ body {
     top: -100%;
     left: 16px;
     z-index: 10001;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    box-sizing: border-box;
     padding: 8px 16px;
     background: var(--primary);
     color: #000;
@@ -368,7 +372,14 @@ body {
 }
 
 .trust-panel p + p { margin-top: 8px; }
-.trust-panel a { color: var(--primary-light); }
+.trust-panel a {
+    color: var(--primary-light);
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    box-sizing: border-box;
+    padding: 4px 0;
+}
 
 /* Buttons */
 .btn {
@@ -774,6 +785,11 @@ body {
 .back-link {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    min-width: 44px;
+    box-sizing: border-box;
+    padding: 10px 16px;
     gap: 6px;
     color: var(--text-muted);
     text-decoration: none;
