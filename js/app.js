@@ -172,8 +172,34 @@ class DopamineTypeApp {
         }
 
         document.getElementById('share-reflection')?.addEventListener('click', function() { self.shareReflection(); });
-        document.getElementById('next-habit')?.addEventListener('click', function() { self.trackOnce('reward_habit_click'); });
-        document.getElementById('next-guide')?.addEventListener('click', function() { self.trackOnce('reward_guide_click'); });
+        const nextHabit = document.getElementById('next-habit');
+        if (nextHabit) {
+            nextHabit.addEventListener('click', function() {
+                self.trackOnce('reward_habit_click');
+                if (typeof gtag === 'function') {
+                    gtag('event', 'content_cta_click', {
+                        link_id: 'dopamine_type_next_habit',
+                        link_text: (nextHabit.textContent || '').trim().slice(0, 40),
+                        target_url: nextHabit.href || '',
+                        source_page: 'dopamine_type_result'
+                    });
+                }
+            });
+        }
+        const nextGuide = document.getElementById('next-guide');
+        if (nextGuide) {
+            nextGuide.addEventListener('click', function() {
+                self.trackOnce('reward_guide_click');
+                if (typeof gtag === 'function') {
+                    gtag('event', 'content_cta_click', {
+                        link_id: 'dopamine_type_next_guide',
+                        link_text: (nextGuide.textContent || '').trim().slice(0, 40),
+                        target_url: nextGuide.href || '',
+                        source_page: 'dopamine_type_result'
+                    });
+                }
+            });
+        }
     }
 
     sanitizeUrl() {
@@ -186,8 +212,8 @@ class DopamineTypeApp {
 
     syncLocalizedActions() {
         var lang = window.i18n?.getCurrentLanguage() || 'en';
-        document.getElementById('next-habit')?.setAttribute('href', '/habit-tracker/?lang=' + lang);
-        document.getElementById('next-guide')?.setAttribute('href', '/portal/blog/' + lang + '/dopamine-type-guide.html');
+        document.getElementById('next-habit')?.setAttribute('href', '/habit-tracker/?lang=' + lang + '&source=dopamine_type_result');
+        document.getElementById('next-guide')?.setAttribute('href', '/portal/blog/' + lang + '/dopamine-type-guide.html?source=dopamine_type_result');
     }
 
     trackOnce(name) {

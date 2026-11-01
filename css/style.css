@@ -706,12 +706,14 @@ body {
 }
 
 .related-tests h3 { font-size: 15px; font-weight: 700; margin-bottom: 12px; }
-.related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.related-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
 .related-card {
     display: flex;
     align-items: center;
     gap: 8px;
     min-height: 52px;
+    min-width: 0;
+    box-sizing: border-box;
     padding: 12px;
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
@@ -721,8 +723,8 @@ body {
     transition: all 0.2s;
 }
 .related-card:hover { transform: translateY(-2px); border-color: var(--card-color); }
-.related-emoji { font-size: 20px; }
-.related-name { font-size: 13px; font-weight: 600; }
+.related-emoji { font-size: 20px; flex-shrink: 0; }
+.related-name { font-size: 13px; font-weight: 600; overflow-wrap: break-word; word-break: break-word; min-width: 0; }
 
 /* Share Section */
 .share-section {
