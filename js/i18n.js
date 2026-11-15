@@ -89,7 +89,7 @@ try {
                 if (el.placeholder !== undefined) el.placeholder = text;
             } else if (el.tagName === 'META') {
                 el.setAttribute('content', text);
-            } else {
+            } else if (!el.querySelector('svg')) {
                 el.textContent = text;
             }
         });
